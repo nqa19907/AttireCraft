@@ -112,7 +112,7 @@ function createServer(options = {}) {
 
 if (require.main === module) {
   const server = createServer();
-  server.listen(4173, '127.0.0.1', () => console.log('AttireCraft: http://localhost:4173'));
+  server.listen(4173, '127.0.0.1', () => console.log('AttireCraft: http://127.0.0.1:4173'));
   server.on('error', error => {
     console.error(error.code === 'EADDRINUSE' ? 'Cổng web đang được sử dụng.' : 'Không khởi động được server.');
     process.exitCode = 1;

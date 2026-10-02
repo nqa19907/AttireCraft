@@ -7,10 +7,23 @@ Website tương tác giúp học sinh, sinh viên khám phá và phối trang ph
 Dự án không cần cài thư viện npm. Dùng Node.js 20 trở lên để chạy máy chủ web cục bộ:
 
 ```powershell
+cd D:\AttireCraft
 node server.cjs
 ```
 
-Sau đó truy cập `http://localhost:4173`.
+Sau đó truy cập `http://127.0.0.1:4173`.
+
+Máy chủ chạy trên địa chỉ IPv4 `127.0.0.1`. Dùng đúng địa chỉ này để tránh trường hợp `localhost` chuyển đến một máy chủ khác trên IPv6 và hiện danh sách thư mục hoặc lỗi tải tài nguyên.
+
+Giữ terminal đang chạy; nhấn `Ctrl+C` để dừng máy chủ. Bạn cũng có thể dùng `npm start` hoặc `npm run dev`.
+
+Trên Windows PowerShell, nếu `npm` báo `running scripts is disabled`, dùng `npm.cmd`:
+
+```powershell
+npm.cmd run dev
+```
+
+Không cần chạy `npm install` vì dự án không có thư viện npm bên ngoài. Nếu cổng 4173 đã có máy chủ chạy, mở địa chỉ ở trên hoặc dừng terminal cũ trước khi khởi động lại.
 
 Bạn cũng có thể mở trực tiếp `frontend/index.html`, nhưng nên dùng máy chủ cục bộ để việc chia sẻ liên kết và tải tài nguyên hoạt động ổn định.
 

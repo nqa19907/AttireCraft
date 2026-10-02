@@ -1,0 +1,15 @@
+{
+  "name": "attirecraft",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website khám phá và phối trang phục truyền thống Việt Nam.",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node server.cjs",
+    "test": "node --test tests/core.test.cjs tests/server.test.cjs",
+    "test:browser": "node tests/browser-smoke.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

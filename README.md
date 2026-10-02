@@ -27,6 +27,26 @@ Không cần chạy `npm install` vì dự án không có thư viện npm bên n
 
 Bạn cũng có thể mở trực tiếp `frontend/index.html`, nhưng nên dùng máy chủ cục bộ để việc chia sẻ liên kết và tải tài nguyên hoạt động ổn định.
 
+## Deploy lên Vercel
+
+Dự án là website HTML/CSS/JS tĩnh; trang chủ nằm ở `frontend/index.html`. File `vercel.json` tại thư mục gốc cấu hình Vercel phục vụ nội dung trong `frontend` và bỏ qua bước cài thư viện, build.
+
+Trong **Settings → Build and Deployment**, dùng các giá trị sau:
+
+| Thiết lập | Giá trị |
+| --- | --- |
+| Root Directory | `./` (thư mục gốc repository) |
+| Framework Preset | `Other` |
+| Build Command | Bật Override, để trống |
+| Output Directory | `frontend` |
+| Install Command | Bật Override, để trống |
+
+Giữ Root Directory là thư mục gốc để Vercel đọc được `vercel.json`. Nếu Output Directory là `.` thì đường dẫn `/` không có `index.html` và có thể báo 404.
+
+Đưa `vercel.json` lên repository đã kết nối với Vercel, rồi deploy phiên bản có file này. Nếu chỉnh thiết lập trên dashboard, cần tạo deployment mới để áp dụng. `server.cjs` chỉ phục vụ việc chạy cục bộ; Vercel phục vụ trực tiếp các file tĩnh, không cần chạy `npm start`.
+
+Tham khảo [cấu hình build của Vercel](https://vercel.com/docs/builds/configure-a-build).
+
 ## Tính năng
 
 - Chọn 4 dòng trang phục: áo dài, áo tứ thân, áo ngũ thân và áo bà ba.

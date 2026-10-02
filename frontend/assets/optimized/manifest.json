@@ -1,0 +1,419 @@
+{
+  "quality": 90,
+  "webp_version": "1.6.0",
+  "totals": {
+    "source_bytes": 44530478,
+    "full_bytes": 3390522,
+    "thumbnail_bytes": 739236
+  },
+  "images": [
+    {
+      "source": "ao-ba-ba-editorial.png",
+      "source_bytes": 1887991,
+      "source_sha256": "0d247f317d6de234d5932e55e77bd83a5c601e6bb74d7b9fc7dea9148b3ba190",
+      "full": {
+        "path": "optimized/ao-ba-ba-editorial.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 136232
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-ba-ba-editorial.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30132
+      }
+    },
+    {
+      "source": "ao-dai-editorial.png",
+      "source_bytes": 1928574,
+      "source_sha256": "00de57908e5f00cf0daf52e5227356894021337ff4d4f245f333174c45715977",
+      "full": {
+        "path": "optimized/ao-dai-editorial.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 148534
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-dai-editorial.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30370
+      }
+    },
+    {
+      "source": "ao-ngu-than-editorial.png",
+      "source_bytes": 1948698,
+      "source_sha256": "cc58a85436ca6518e0352bdaae3baa864648a5511ce6562a7596a0d58b9285d3",
+      "full": {
+        "path": "optimized/ao-ngu-than-editorial.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 149714
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-ngu-than-editorial.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 32774
+      }
+    },
+    {
+      "source": "ao-tu-than-editorial.png",
+      "source_bytes": 1978141,
+      "source_sha256": "65d075fed034673b429ec6d382f122baec284335706fd5bf3bd4a4b4d8c68d47",
+      "full": {
+        "path": "optimized/ao-tu-than-editorial.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 159012
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-tu-than-editorial.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 32064
+      }
+    },
+    {
+      "source": "outfits/ao-dai-black.png",
+      "source_bytes": 1884974,
+      "source_sha256": "e67f602ed83a2ff673de96de49162e2ecb0e58a6c95e0a0c488739bf9cef40fe",
+      "full": {
+        "path": "optimized/ao-dai-black.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 154866
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-dai-black.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 31520
+      }
+    },
+    {
+      "source": "outfits/ao-dai-ivory.png",
+      "source_bytes": 1928574,
+      "source_sha256": "00de57908e5f00cf0daf52e5227356894021337ff4d4f245f333174c45715977",
+      "full": {
+        "path": "optimized/ao-dai-ivory.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 148534
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-dai-ivory.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30370
+      }
+    },
+    {
+      "source": "outfits/ao-dai-pink.png",
+      "source_bytes": 1898081,
+      "source_sha256": "695fd548a08a7ce449f4ac39e45128d08b4630c853c0075c85e54014c1cc9172",
+      "full": {
+        "path": "optimized/ao-dai-pink.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 153752
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-dai-pink.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 32096
+      }
+    },
+    {
+      "source": "outfits/ao-dai-red.png",
+      "source_bytes": 1870704,
+      "source_sha256": "148a8e62c814dfe4cb65bfbfde6e3b33b26f4aa6e30fa922b29a1d3bd9cab895",
+      "full": {
+        "path": "optimized/ao-dai-red.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 147350
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-dai-red.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30510
+      }
+    },
+    {
+      "source": "outfits/ao-dai-teal.png",
+      "source_bytes": 1854074,
+      "source_sha256": "86d0346122b763944535192a64f7168ccadc618f4932e93fc6da67011a04a2b0",
+      "full": {
+        "path": "optimized/ao-dai-teal.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 152920
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ao-dai-teal.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 31878
+      }
+    },
+    {
+      "source": "outfits/ba-ba-black.png",
+      "source_bytes": 1730976,
+      "source_sha256": "3989af04b30769d7b3661668a26c90ddf593f613ee7fcfefd14d662b6ae0e772",
+      "full": {
+        "path": "optimized/ba-ba-black.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 122046
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ba-ba-black.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 28896
+      }
+    },
+    {
+      "source": "outfits/ba-ba-ivory.png",
+      "source_bytes": 1756745,
+      "source_sha256": "a8398271cca02b4606d4bcede4438cb1b6e0fa2cbadcb5e9f912a9bf6f59ad77",
+      "full": {
+        "path": "optimized/ba-ba-ivory.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 124136
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ba-ba-ivory.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 29200
+      }
+    },
+    {
+      "source": "outfits/ba-ba-pink.png",
+      "source_bytes": 1887991,
+      "source_sha256": "0d247f317d6de234d5932e55e77bd83a5c601e6bb74d7b9fc7dea9148b3ba190",
+      "full": {
+        "path": "optimized/ba-ba-pink.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 136232
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ba-ba-pink.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30132
+      }
+    },
+    {
+      "source": "outfits/ba-ba-red.png",
+      "source_bytes": 1745286,
+      "source_sha256": "b432b08543dc98f4f7c4324da352ce7702a811326c67cfb3dcf5dc0d9e767d5b",
+      "full": {
+        "path": "optimized/ba-ba-red.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 123980
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ba-ba-red.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 29292
+      }
+    },
+    {
+      "source": "outfits/ba-ba-teal.png",
+      "source_bytes": 1742813,
+      "source_sha256": "32428682ad06fec3d2a83b420fcff3d16dfe87078d31cee34eec0fc700a36d50",
+      "full": {
+        "path": "optimized/ba-ba-teal.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 126968
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ba-ba-teal.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 31334
+      }
+    },
+    {
+      "source": "outfits/ngu-than-black.png",
+      "source_bytes": 1794161,
+      "source_sha256": "e8e554f1558e333c239e4cb97c34c6d10d327fbdd26cf0f3367785e49ffe2815",
+      "full": {
+        "path": "optimized/ngu-than-black.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 134028
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ngu-than-black.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30342
+      }
+    },
+    {
+      "source": "outfits/ngu-than-ivory.png",
+      "source_bytes": 1863513,
+      "source_sha256": "a3d1c85a83bd960eb5f3e555823eb7db225c99a32417712ed082da634fd6dbf2",
+      "full": {
+        "path": "optimized/ngu-than-ivory.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 138918
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ngu-than-ivory.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 29750
+      }
+    },
+    {
+      "source": "outfits/ngu-than-pink.png",
+      "source_bytes": 1857802,
+      "source_sha256": "3c7152c3c224c4fab752f3a25e7694add644e125e703e29af1ed52a23ca236e5",
+      "full": {
+        "path": "optimized/ngu-than-pink.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 137690
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ngu-than-pink.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30950
+      }
+    },
+    {
+      "source": "outfits/ngu-than-red.png",
+      "source_bytes": 1869527,
+      "source_sha256": "fac38f241f9f6fa3f077edcd361aee126d5bcfc1c9fa2ca095e73b992baac867",
+      "full": {
+        "path": "optimized/ngu-than-red.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 143016
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ngu-than-red.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 31126
+      }
+    },
+    {
+      "source": "outfits/ngu-than-teal.png",
+      "source_bytes": 1948698,
+      "source_sha256": "cc58a85436ca6518e0352bdaae3baa864648a5511ce6562a7596a0d58b9285d3",
+      "full": {
+        "path": "optimized/ngu-than-teal.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 149714
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/ngu-than-teal.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 32774
+      }
+    },
+    {
+      "source": "outfits/tu-than-black.png",
+      "source_bytes": 1789707,
+      "source_sha256": "4a385662cd67b04d811281b372732dc48181ce49ff0658cecd0d8711603504b4",
+      "full": {
+        "path": "optimized/tu-than-black.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 134760
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/tu-than-black.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 29854
+      }
+    },
+    {
+      "source": "outfits/tu-than-ivory.png",
+      "source_bytes": 1863563,
+      "source_sha256": "98e83c7a8f8b07838fbbe859bf5efba302eb9c97d951e45fda94f3fadb732234",
+      "full": {
+        "path": "optimized/tu-than-ivory.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 142340
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/tu-than-ivory.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30442
+      }
+    },
+    {
+      "source": "outfits/tu-than-pink.png",
+      "source_bytes": 1851387,
+      "source_sha256": "0afbd210a57df09da0944cf5eca077154bd51f18bf8a3c6b4ce1c7d90217945a",
+      "full": {
+        "path": "optimized/tu-than-pink.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 141446
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/tu-than-pink.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 31494
+      }
+    },
+    {
+      "source": "outfits/tu-than-red.png",
+      "source_bytes": 1820659,
+      "source_sha256": "764f17e6a4c4c364521e4ab47c51b23b5aef4a85238f0cdb1ddb3952c78e38f7",
+      "full": {
+        "path": "optimized/tu-than-red.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 139464
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/tu-than-red.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 30702
+      }
+    },
+    {
+      "source": "outfits/tu-than-teal.png",
+      "source_bytes": 1827839,
+      "source_sha256": "23bb9057aaa4fe3373e57dfbc7f5f550b08f51c444a92a6bddcd4de560ee134a",
+      "full": {
+        "path": "optimized/tu-than-teal.webp",
+        "width": 1122,
+        "height": 1402,
+        "bytes": 144870
+      },
+      "thumbnail": {
+        "path": "optimized/thumbs/tu-than-teal.webp",
+        "width": 384,
+        "height": 480,
+        "bytes": 31234
+      }
+    }
+  ]
+}

@@ -1,16 +1,18 @@
 (function (root, factory) {
   'use strict';
   const variants = typeof module === 'object' && module.exports ? require('./image-variants.js') : root.AttireImageVariants || [];
-  const core = factory(variants);
+  const styleVariants = typeof module === 'object' && module.exports ? require('./style-image-variants.js') : root.AttireStyleImageVariants || [];
+  const core = factory(variants, styleVariants);
   if (typeof module === 'object' && module.exports) module.exports = core;
   else root.AttireCore = core;
-})(typeof globalThis !== 'undefined' ? globalThis : this, function (variants) {
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (variants, styleVariants) {
   'use strict';
 
   const VERSION = 2;
   const MAX_LOOKS = 12;
   const MAX_FILE_BYTES = 100000;
   const imageVariants = new Set(variants);
+  const styleImageVariants = new Set(styleVariants);
   const DATA = {
     garments: {
       'ao-dai': { label: 'Áo dài', prefix: 'Nét', culture: 'Áo dài thường được nhận diện qua hai tà áo mặc cùng quần. Khi làm mới, bạn có thể bắt đầu với màu sắc, chất liệu và phụ kiện phù hợp hoàn cảnh.' },
@@ -32,6 +34,7 @@
       'hang-ngay': { label: 'Hằng ngày', fit: ['ba-ba', 'ao-dai'] }
     },
     styles: { minimal: 'Tối giản', genz: 'Gen Z', classic: 'Cổ điển' },
+    styleAccessories: { minimal: '', genz: 'Kính râm', classic: 'Vòng cổ ngọc trai' },
     weather: { warm: 'Nắng ấm', cool: 'Se lạnh', rain: 'Có mưa' },
     accessories: { non: 'Nón lá', khan: 'Khăn vấn', ngoc: 'Khuyên ngọc', tui: 'Túi lụa' }
   };
@@ -80,14 +83,30 @@
 
   function imagePath(config, thumbnail = false, original = false) {
     if (!has(DATA.garments, config?.garment) || !has(DATA.colors, config?.color)) throw new TypeError('Trang phục hoặc màu không hợp lệ.');
+    const style = config.style === undefined ? 'minimal' : config.style;
+    if (!has(DATA.styles, style)) throw new TypeError('Phong cách không hợp lệ.');
     const base = `${config.garment}-${config.color}`;
     const accessories = config.accessories || [];
     if (!Array.isArray(accessories) || accessories.length > 2 || accessories.some(key => !has(DATA.accessories, key)) || new Set(accessories).size !== accessories.length) throw new TypeError('Phụ kiện không hợp lệ.');
     const variant = `${base}--${[...accessories].sort().join('-')}`;
     const available = accessories.length > 0 && imageVariants.has(variant);
     const stem = available ? variant : base;
-    if (original) return `assets/outfits/${available ? 'accessories/' : ''}${stem}.png`;
-    return `assets/optimized/${available ? 'accessories/' : ''}${thumbnail ? 'thumbs/' : ''}${stem}.webp`;
+    const styled = style !== 'minimal' && styleImageVariants.has(`${style}/${accessories.length ? variant : base}`);
+    const folder = styled ? `styles/${style}/` : available ? 'accessories/' : '';
+    const imageStem = styled && accessories.length ? variant : stem;
+    if (original) return `assets/outfits/${folder}${imageStem}.png`;
+    return `assets/optimized/${folder}${thumbnail ? 'thumbs/' : ''}${imageStem}.webp`;
+  }
+
+  function accessoryLabels(config) {
+    const labels = config.accessories.map(key => DATA.accessories[key]);
+    if (imagePath(config).includes('/styles/')) labels.push(DATA.styleAccessories[config.style]);
+    return labels;
+  }
+
+  function imageDescription(config) {
+    const labels = accessoryLabels(config);
+    return `${DATA.garments[config.garment].label} màu ${DATA.colors[config.color].label.toLowerCase()}${labels.length ? `, có ${labels.join(', ')}` : ''} — ảnh minh họa trang phục`;
   }
 
   function cultureStatus(config) {
@@ -100,8 +119,8 @@
   function stylingTip(config) {
     const tips = {
       minimal: 'Giữ một điểm nhấn: giày trơn màu, phụ kiện nhỏ và chất liệu ít họa tiết.',
-      genz: 'Thử một phụ kiện có cá tính và giày đơn sắc; để màu áo làm điểm nhấn chính.',
-      classic: 'Ưu tiên phụ kiện nhỏ, gam màu đồng điệu và kiểu tóc gọn để tôn phom áo.'
+      genz: 'Kính râm thêm nét cá tính; phối cùng giày đơn sắc để màu áo làm điểm nhấn chính.',
+      classic: 'Vòng cổ ngọc trai thêm nét thanh lịch; chọn gam màu đồng điệu và kiểu tóc gọn để tôn phom áo.'
     };
     return tips[config.style];
   }
@@ -244,5 +263,5 @@
     return result;
   }
 
-  return Object.freeze({ VERSION, MAX_LOOKS, MAX_FILE_BYTES, DATA, DEFAULT, validateConfig, configKey, getScore, lookName, makeLook, imagePath, cultureStatus, stylingTip, weatherTip, scoreReasons, addLook, parseLookbook, serializeLookbook, mergeLooks, encodeShare, decodeShare, suggest, differences });
+  return Object.freeze({ VERSION, MAX_LOOKS, MAX_FILE_BYTES, DATA, DEFAULT, validateConfig, configKey, getScore, lookName, makeLook, imagePath, accessoryLabels, imageDescription, cultureStatus, stylingTip, weatherTip, scoreReasons, addLook, parseLookbook, serializeLookbook, mergeLooks, encodeShare, decodeShare, suggest, differences });
 });

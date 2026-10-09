@@ -226,6 +226,57 @@ async function main() {
       assert.ok(!(await page.locator('#model-image').getAttribute('src')).includes('/accessories/'));
     });
 
+    await scenario('published personality photos and pending fallbacks persist through saving comparison and download', async page => {
+      const published = new Set(require('../frontend/style-image-variants.js'));
+      const keys = ['khan', 'ngoc', 'non', 'tui'];
+      const combinations = [[], ...keys.map(key => [key])];
+      for (let i = 0; i < keys.length; i++) for (let j = i + 1; j < keys.length; j++) combinations.push([keys[i], keys[j]]);
+      for (const garment of garmentKeys) {
+        await selectGarment(page, garment);
+        for (const color of colorKeys) {
+          await selectColor(page, color);
+          for (const accessories of combinations) {
+            await clearAccessories(page);
+            for (const key of accessories) await page.locator(`#accessory-options [data-value="${key}"]`).click();
+            const stem = `${garment}-${color}${accessories.length ? '--' + [...accessories].sort().join('-') : ''}`;
+            for (const style of ['genz', 'classic', 'minimal']) {
+              await page.locator(`#style-options [data-value="${style}"]`).click();
+              const hasStyle = published.has(`${style}/${stem}`);
+              const folder = hasStyle ? `/styles/${style}/` : accessories.length ? '/accessories/' : '/';
+              await imageReady(page, folder + stem + '.webp');
+              assert.equal(await page.locator('#accessory-options [aria-pressed="true"]').count(), accessories.length);
+              if (hasStyle) assert.match(await page.locator('#model-image').getAttribute('alt'), style === 'genz' ? /Kính râm/ : /Vòng cổ ngọc trai/);
+            }
+          }
+        }
+      }
+      await selectGarment(page, 'ngu-than');
+      await selectColor(page, 'ivory');
+      await clearAccessories(page);
+      for (const key of ['ngoc', 'khan']) await page.locator(`#accessory-options [data-value="${key}"]`).click();
+      await page.locator('#style-options [data-value="genz"]').click();
+      await imageReady(page, '/styles/genz/');
+      await page.locator('#save-button').click();
+      await page.locator('#compare-button').click();
+      await page.locator('#style-options [data-value="classic"]').click();
+      await imageReady(page, '/styles/classic/');
+      assert.ok((await page.locator('.saved-card img').getAttribute('src')).includes('/styles/genz/thumbs/'));
+      assert.ok((await page.locator('.compare-item.current img').getAttribute('src')).includes('/styles/classic/thumbs/'));
+      const png = await page.evaluate(async () => {
+        const config = { garment: 'ngu-than', color: 'ivory', occasion: 'le-hoi', weather: 'warm', style: 'classic', accessories: ['ngoc', 'khan'] };
+        const source = window.AttireCore.imagePath(config, false, true);
+        const blob = await window.AttireDownload.create([config], look => window.AttireCore.imagePath(look, false, true));
+        const decoded = await createImageBitmap(blob);
+        const original = await createImageBitmap(await (await fetch(source)).blob());
+        return { source, type: blob.type, output: [decoded.width, decoded.height], original: [original.width, original.height] };
+      });
+      assert.ok(png.source.includes('/styles/classic/'));
+      assert.equal(png.type, 'image/png');
+      assert.deepEqual(png.output, png.original);
+      await page.reload();
+      assert.ok((await page.locator('.saved-card img').getAttribute('src')).includes('/styles/genz/thumbs/'));
+    });
+
     await scenario('lookbook distinguishes weather and accessories and survives reload', async page => {
       await page.locator('#save-button').click();
       assert.equal(await saveCount(page), 1);

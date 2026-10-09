@@ -1,0 +1,4678 @@
+{
+  "checked": 352,
+  "expected": 440,
+  "by_style": {
+    "genz": 202,
+    "classic": 150
+  },
+  "missing": [
+    "genz/ao-dai-pink--non",
+    "genz/ao-dai-pink--tui",
+    "genz/ao-dai-pink--khan-ngoc",
+    "genz/ao-dai-pink--khan-non",
+    "genz/ao-dai-pink--khan-tui",
+    "genz/ao-dai-pink--ngoc-non",
+    "genz/ao-dai-pink--ngoc-tui",
+    "genz/ao-dai-pink--non-tui",
+    "genz/ao-dai-black--khan",
+    "genz/ao-dai-black--ngoc",
+    "genz/ao-dai-black--non",
+    "genz/ao-dai-black--tui",
+    "genz/ao-dai-black--khan-ngoc",
+    "genz/ao-dai-black--khan-non",
+    "genz/ao-dai-black--khan-tui",
+    "genz/ao-dai-black--ngoc-non",
+    "genz/ao-dai-black--ngoc-tui",
+    "genz/ao-dai-black--non-tui",
+    "classic/ao-dai-ivory--khan",
+    "classic/ao-dai-ivory--ngoc",
+    "classic/ao-dai-ivory--non",
+    "classic/ao-dai-ivory--tui",
+    "classic/ao-dai-ivory--khan-ngoc",
+    "classic/ao-dai-ivory--khan-non",
+    "classic/ao-dai-ivory--khan-tui",
+    "classic/ao-dai-ivory--ngoc-non",
+    "classic/ao-dai-ivory--ngoc-tui",
+    "classic/ao-dai-ivory--non-tui",
+    "classic/ao-dai-red--khan",
+    "classic/ao-dai-red--ngoc",
+    "classic/ao-dai-red--non",
+    "classic/ao-dai-red--tui",
+    "classic/ao-dai-red--khan-ngoc",
+    "classic/ao-dai-red--khan-non",
+    "classic/ao-dai-red--khan-tui",
+    "classic/ao-dai-red--ngoc-non",
+    "classic/ao-dai-red--ngoc-tui",
+    "classic/ao-dai-red--non-tui",
+    "classic/ao-dai-teal--khan",
+    "classic/ao-dai-teal--ngoc",
+    "classic/ao-dai-teal--non",
+    "classic/ao-dai-teal--tui",
+    "classic/ao-dai-teal--khan-ngoc",
+    "classic/ao-dai-teal--khan-non",
+    "classic/ao-dai-teal--khan-tui",
+    "classic/ao-dai-teal--ngoc-non",
+    "classic/ao-dai-teal--ngoc-tui",
+    "classic/ao-dai-teal--non-tui",
+    "classic/ao-dai-pink--khan",
+    "classic/ao-dai-pink--ngoc",
+    "classic/ao-dai-pink--non",
+    "classic/ao-dai-pink--tui",
+    "classic/ao-dai-pink--khan-ngoc",
+    "classic/ao-dai-pink--khan-non",
+    "classic/ao-dai-pink--khan-tui",
+    "classic/ao-dai-pink--ngoc-non",
+    "classic/ao-dai-pink--ngoc-tui",
+    "classic/ao-dai-pink--non-tui",
+    "classic/ao-dai-black--khan",
+    "classic/ao-dai-black--ngoc",
+    "classic/ao-dai-black--non",
+    "classic/ao-dai-black--tui",
+    "classic/ao-dai-black--khan-ngoc",
+    "classic/ao-dai-black--khan-non",
+    "classic/ao-dai-black--khan-tui",
+    "classic/ao-dai-black--ngoc-non",
+    "classic/ao-dai-black--ngoc-tui",
+    "classic/ao-dai-black--non-tui",
+    "classic/ba-ba-ivory--ngoc-tui",
+    "classic/ba-ba-ivory--non-tui",
+    "classic/ba-ba-red--khan-non",
+    "classic/ba-ba-red--khan-tui",
+    "classic/ba-ba-red--ngoc-non",
+    "classic/ba-ba-red--ngoc-tui",
+    "classic/ba-ba-red--non-tui",
+    "classic/ba-ba-teal--khan-tui",
+    "classic/ba-ba-teal--ngoc-non",
+    "classic/ba-ba-teal--ngoc-tui",
+    "classic/ba-ba-teal--non-tui",
+    "classic/ba-ba-pink--khan-non",
+    "classic/ba-ba-pink--khan-tui",
+    "classic/ba-ba-pink--ngoc-non",
+    "classic/ba-ba-pink--ngoc-tui",
+    "classic/ba-ba-pink--non-tui",
+    "classic/ba-ba-black--khan-tui",
+    "classic/ba-ba-black--ngoc-non",
+    "classic/ba-ba-black--ngoc-tui",
+    "classic/ba-ba-black--non-tui"
+  ],
+  "failures": [],
+  "background_review": [],
+  "images": [
+    {
+      "key": "genz/ao-dai-ivory",
+      "sha256": "525a615c83052ed5719da466e2c0dfb55aedcf2fbedd845c231fe8a3f3d17b37",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.1,
+        1.892,
+        4.32
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red",
+      "sha256": "00db68a71d323ed8d76d9a677776514a2160c967df6a768a0986892bd1e5854e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.498,
+        2.028,
+        3.925
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal",
+      "sha256": "8d0f4ed9d637902e829dfd600ab64e1fbc48fa35ea1aed0e6d1a7df8505bb48a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.857,
+        1.693,
+        3.196
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink",
+      "sha256": "bfcb732c3325dd73e37b112c036e5eacc6f3a75160488456e11fe1ee74819f65",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.569,
+        2.743,
+        4.145
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black",
+      "sha256": "08a841330f1596b3facb94a1376bfe6291b2bdbb68f816f4b5a78bc16294ae41",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.362,
+        2.648,
+        4.037
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory",
+      "sha256": "b056fe0023a85340ccf1dd200f2e40ab99d5692770152e287d9fc3fcae0b6492",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.815,
+        1.205,
+        2.666
+      ]
+    },
+    {
+      "key": "genz/tu-than-red",
+      "sha256": "65b16701fb95b6ecb3fa02ff0f634f6e577881b75b2f028f1891c68072ece43a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.349,
+        0.992,
+        2.65
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal",
+      "sha256": "1c18dd78a22ab713daf09b5cee95e3f5da92210a2ce71daac007723da8de0082",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        7.241,
+        1.596,
+        2.976
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink",
+      "sha256": "d543b2b65e91fc76c3c09caf3ea5725bd467decbf6d8bad5670cc45b13f5fb7a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.991,
+        1.85,
+        3.089
+      ]
+    },
+    {
+      "key": "genz/tu-than-black",
+      "sha256": "c4a4949fafda55c1f8508a9422471ab4840df68b1cffccc6a476bfe5208db3b8",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        7.371,
+        2.24,
+        4.388
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory",
+      "sha256": "d620cb16c8240c08440b4efd3b39ccaa0d5f9abe438fd544832fe4f67b2114a3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.052,
+        3.769,
+        3.201
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red",
+      "sha256": "f786ee3a8bf7d9a05bc2628515b827d89675c586238eb7e0e59e114b853c9890",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.305,
+        2.834,
+        3.544
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal",
+      "sha256": "7ebcc810ce00e78c7872dbe63a8283b49a74bba02d21b0a555c8e8a039e66fcc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.592,
+        2.808,
+        3.791
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink",
+      "sha256": "120d548bb34af3f1ac2d515365f8ee037e88218f85de0920fd2c3fb08a6a246c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.04,
+        2.105,
+        2.285
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black",
+      "sha256": "26817139d4480e294c0f3275e1f3e77572e31a77111d8f81964c76e05e002213",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.567,
+        3.327,
+        3.365
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory",
+      "sha256": "24b3d2218da7e20a68590a5b1a8cc197d86e5c760b572c09825830addb6f075f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.17,
+        2.597,
+        3.02
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red",
+      "sha256": "dbe354c9078eaae3bd428c55a8b81ca4cb7d61c84eb004afbdfe8de172479a5f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.113,
+        3.251,
+        3.32
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal",
+      "sha256": "9e2cb023f1a26c1302be1f077b450b5fcd69d6d90b70c96ec442074fefb9fe95",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.807,
+        3.481,
+        3.203
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink",
+      "sha256": "1bcab146b198bfdfe7fa5bc32060e9845c6665643e8a1d22960395fd511d16f5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.266,
+        3.005,
+        4.585
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black",
+      "sha256": "814b46d927f39a739ba51c695360f5869a9c7b5d63ff6001e8dcd50bf542b5a6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.53,
+        2.92,
+        2.685
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--khan",
+      "sha256": "c7ff16739500e8593a91ad92ee5c72c7953400ce23aa26267568489d2b175e3f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.189,
+        2.173,
+        4.177
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--ngoc",
+      "sha256": "a51750e60eca297fa53067222985758f33c9e3f9624e2436727d9d17c692cead",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.683,
+        2.211,
+        3.523
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--non",
+      "sha256": "274d8208088e6b8b40e44281d5862bb26d53abf0f382b47a057fad8aae4c4788",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.061,
+        2.573,
+        3.658
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--tui",
+      "sha256": "193bcf5c274981f8d904cbc87cb3ea36bc637292778a6630dfc4e9e0933b6a33",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.18,
+        2.663,
+        4.177
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--khan-ngoc",
+      "sha256": "948b1fd9e5e739d519e1ef4db2e85f8dfa737bd1ba5e09b21fc139be9daa777c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.238,
+        2.507,
+        3.868
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--khan-non",
+      "sha256": "de2a3d793ec9970efc876031e7fbd115dbe73c7f38cad1686fb26c2bd3e5ba91",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.746,
+        1.656,
+        3.157
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--khan-tui",
+      "sha256": "0247b4c378b91bccc6ac10116390f9291644f0f3a431fa8e72b45124bc50dc30",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.301,
+        2.965,
+        4.696
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--ngoc-non",
+      "sha256": "4b893c16aa8e15342c364433133d356f8a53ef00fba6d03e4326132f105f395c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.008,
+        2.36,
+        3.585
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--ngoc-tui",
+      "sha256": "930cab93b85ea9b47d9681d6e02bf7b1ceec9e60e7d95d16565a8f0a1cec46c6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.024,
+        2.026,
+        3.164
+      ]
+    },
+    {
+      "key": "genz/ao-dai-ivory--non-tui",
+      "sha256": "5a37430088cbccdd7cc175d659831c0a733229c05a21cb83261dc2582a1efa49",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.048,
+        1.876,
+        3.456
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--khan",
+      "sha256": "3160804ebb1df825013b4639a86be908df7e5cff48745e90ebdc0dc0b27b39d8",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.05,
+        1.688,
+        3.184
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--ngoc",
+      "sha256": "f449d74555d6d89100aa5498b15551f69de4439e7d90cf67297d37539f272556",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.037,
+        1.612,
+        2.957
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--non",
+      "sha256": "7b2c7ddec8394942dd3067615483d5e9e315cc8d36f76bc23495614eaa30abcb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.765,
+        1.499,
+        3.049
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--tui",
+      "sha256": "34eeab835893df53ef426c5fb54f8a0f71def97a5d9e72c809fc23f5b0a4c505",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.538,
+        1.772,
+        2.807
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--khan-ngoc",
+      "sha256": "07fd29433bca19dd2cacd2bdf90ebd7b0bd430a158fe03b77cd9fc407501ecc1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.626,
+        2.464,
+        3.708
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--khan-non",
+      "sha256": "9631a05186ed4117a5e2de15bb7afef2a8265461c02f469550ed7aac98b05971",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.551,
+        2.256,
+        3.884
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--khan-tui",
+      "sha256": "ece888b350dd24629e29b9957bae8f38348e8ced81c193cc721842357666beca",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.6,
+        1.487,
+        3.096
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--ngoc-non",
+      "sha256": "8c1e57c0a38216a04d149881555d87e5d1bcb386ceac61142764402bb5681bfc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.028,
+        1.899,
+        3.564
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--ngoc-tui",
+      "sha256": "0c6af9a7ab3fa8160d061eb3f1891d4c6873f13328133c5a5c085171393f2a04",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.764,
+        2.001,
+        4.677
+      ]
+    },
+    {
+      "key": "genz/ao-dai-red--non-tui",
+      "sha256": "c70013c18ea6da0d049a97faa337a2287f0f08ce81456de0c50a2ec3e032a45c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.695,
+        1.447,
+        2.991
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--khan",
+      "sha256": "28cd98ba6332268869aa9a57f5f9e5c2c640338171fc3cbbdaa9a41c343a27a9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.429,
+        1.807,
+        2.991
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--ngoc",
+      "sha256": "96e11cf2798586e54853fab8d7824933eb8c69997a213f7716cec1c6a7cb0559",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.667,
+        1.876,
+        3.15
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--non",
+      "sha256": "a472159a0b5831ba8a698a73ecb00c774ab26290cb70b885ee4e4989066e4afe",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.102,
+        1.815,
+        3.468
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--tui",
+      "sha256": "9fdf44d85c881f1cade3479a54a315bdb2e3acc693ee516672a00bb610a0740f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.0,
+        3.114,
+        4.266
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--khan-ngoc",
+      "sha256": "40001fb071f0de06c3b6c73a27a8539be3478210a22fc99cde27b716cf79a7c4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.883,
+        3.382,
+        4.877
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--khan-non",
+      "sha256": "a3e4361f90903051845d573bb37f2a9f07f6857de9c9f8f76aa3099c922df476",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.4,
+        1.637,
+        2.979
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--khan-tui",
+      "sha256": "99e74e62522d97a69f9c90156c1f42ee21ff01197433736f382e5f4c2f0e432b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.647,
+        2.423,
+        3.564
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--ngoc-non",
+      "sha256": "b7b11c23b199b313e09a04c6a146cd78c76edefac75c0ab9334bb92e640f2e27",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.014,
+        2.273,
+        4.025
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--ngoc-tui",
+      "sha256": "491defc8d9577039c3d42660a1d962d26fd57b67594237c91821f438bd0f9977",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.938,
+        2.133,
+        3.941
+      ]
+    },
+    {
+      "key": "genz/ao-dai-teal--non-tui",
+      "sha256": "0438a611b875d4a54ea10eb1160f27106b435d6e1a822497422e685c5d85d767",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.851,
+        1.983,
+        3.128
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--khan",
+      "sha256": "43fbd7775d7de758f9677796affd05c2d984e03a7b75afd594329b6d44d68542",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.582,
+        1.509,
+        2.96
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--ngoc",
+      "sha256": "2894ed2fb6882c10d72c899a552dd7b92618b18bf408fb90ec4ec4885ffb2b36",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.103,
+        1.742,
+        2.953
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--khan",
+      "sha256": "9620db39e03ea69662bc555ba4f79633f9747d02fb60baa91eede8062682cc6f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.697,
+        1.157,
+        3.712
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--ngoc",
+      "sha256": "b79bb576ae42beeb1368dfab046b9f5cdde9a10f0d76e93f64bd9c179153d933",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.33,
+        1.811,
+        2.372
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--non",
+      "sha256": "5bfae6c38deb907a68fc66cce8c193ce9b7107ce31c848721c4c0e3f8570a52d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.86,
+        1.138,
+        2.28
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--tui",
+      "sha256": "8883e5281b5f34e8f3f47454173a78334d5821146c5cf426e0085f6b596acca0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.534,
+        2.542,
+        3.529
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--khan-ngoc",
+      "sha256": "5911aaff207c3268fc282306c57d0404e00bcd7329695b7fd66c5c29a91a206c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.04,
+        1.249,
+        2.568
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--khan-non",
+      "sha256": "0012ee7a4579fc83f5e8b8844119988f1b444d01487c0908759c0dac31ca1594",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.841,
+        1.676,
+        3.959
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--khan-tui",
+      "sha256": "d6d481d7e0bcdba68c2bbe0971d87b794587097ba45f0544fbe1a315baa11987",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.769,
+        2.947,
+        3.567
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--ngoc-non",
+      "sha256": "a2b3208533bd5918e4f4cf68d3014fc2406a6ca96291f43e3113e50892d4f199",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.201,
+        1.393,
+        2.32
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--ngoc-tui",
+      "sha256": "ccc3c2b1f6c7fbbdc37a6946a39d6bbdc4dd85a65a37f1cc7aa7b8d1475bd597",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.09,
+        2.147,
+        2.92
+      ]
+    },
+    {
+      "key": "genz/tu-than-ivory--non-tui",
+      "sha256": "c3e7128641a614f131a6f84f54d511e7c36b57e49f1f2680b5d0998fab3b3c8a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        7.441,
+        2.15,
+        3.213
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--khan",
+      "sha256": "2a77956c5d37635274d2aea4c7f12f093d2bdb0d540c7c1cba72f461e897cdc5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        8.72,
+        2.218,
+        3.79
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--ngoc",
+      "sha256": "45d037a586b24f7b94fdad11d6ab46d080ef992d1ceaf31c86ddf8bbac69ff3c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.566,
+        1.11,
+        2.859
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--non",
+      "sha256": "b1fb3ce1be1ac9039900e59a9fb0204ae7b3a613d7cef4d9b74a183d4f112d1a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.038,
+        1.331,
+        3.225
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--tui",
+      "sha256": "cec85d52d6f900ace074909d591120bcfbbdafba5164f253534b082cb4b5bbba",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.074,
+        2.317,
+        3.141
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--khan-ngoc",
+      "sha256": "931d997484c319495f7e0b0ad3dfcdeb464167d47d111894ed32ed0d4e95f254",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        8.549,
+        1.275,
+        2.922
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--khan-non",
+      "sha256": "20c0c833a98a0b79d60ec5541405d4252223d883b49d5372634651a41fd448aa",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.627,
+        1.665,
+        2.969
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--khan-tui",
+      "sha256": "dca8fc9331539609cd59b17a783aa056ddbc65865bb34d1ac9cd501a3cacda50",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.672,
+        1.291,
+        3.116
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--ngoc-non",
+      "sha256": "cf77ab9541bc7b39c15546e605d9cb2356115f3a1fd213b39ba4e2ab6d6b3a1a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.988,
+        1.723,
+        3.055
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--ngoc-tui",
+      "sha256": "ef1c4f6177c07f4d4921b35567fb8bf78972681c17ecb02430483777fc0cc2a1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.627,
+        1.785,
+        3.022
+      ]
+    },
+    {
+      "key": "genz/tu-than-red--non-tui",
+      "sha256": "505f8787bb821fc092a4207d20f1ba79736739ef2b1c6120d9152d34d142975b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.096,
+        1.075,
+        2.496
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--khan",
+      "sha256": "42346ab18f2182ff773cf08fa3ccddc5c581b557d07389fb4aee4929eb6710c5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.224,
+        1.209,
+        2.446
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--ngoc",
+      "sha256": "4de9f24ab40bb06bbee71085fb62e5c72c0527d212781b0de0b7fb9a46946cef",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.562,
+        1.991,
+        4.576
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--non",
+      "sha256": "9194e1985517110f6b22cfead0868f251ae4b1bd87c181a3448118a3b3964323",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.784,
+        1.485,
+        2.912
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--tui",
+      "sha256": "786ecbaee05ca9c8d752bf0cb0d36983dd6186162ba3449559dc015e64592129",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.804,
+        1.696,
+        3.013
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--khan-ngoc",
+      "sha256": "60a83a3389c8778a54d79d2514a3d3aba06ff0d07636fd7301ed2818e0f6c18a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.043,
+        1.326,
+        2.774
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--khan-non",
+      "sha256": "1d9ea68f926345530eeb622fcc86505a8224033982ac4765b6ee039ef927a791",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.973,
+        0.992,
+        2.157
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--khan-tui",
+      "sha256": "64f8dc888a18e5a1bbccc2884520be7d07ee26ac8f688b349b2ae318db393583",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.311,
+        0.965,
+        2.268
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--ngoc-non",
+      "sha256": "eae17025fddc66fa81ba57ce252fae2f0f3186366d4487456bd5cdc367fe1d58",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.076,
+        2.012,
+        3.233
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--ngoc-tui",
+      "sha256": "e1def257c32ce9e3696aeab32679d0aad931e44a37185b61aba84d2f072c24fe",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.505,
+        2.565,
+        3.723
+      ]
+    },
+    {
+      "key": "genz/tu-than-teal--non-tui",
+      "sha256": "e75fa2ec32adaa47d4b89b87e35b81dfe2655fcc0fe97eb8204d6ece6e2a28d6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.698,
+        1.913,
+        3.092
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--khan",
+      "sha256": "fc96c7561f2f3a9e6812197fe39383f94831875ab2e7a51a90ff037ca33cf9db",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.406,
+        1.571,
+        2.295
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--ngoc",
+      "sha256": "275b18f4329e98a25da793784fbb1610fbf66ef5975d6845ce13aef1a82b195e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.043,
+        1.106,
+        2.577
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--non",
+      "sha256": "35a8ac23a68c58374fee0bd7a10522de2021763be8c102643e7d58dca4c84340",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.843,
+        0.94,
+        2.456
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--tui",
+      "sha256": "1d5d96a21a7605393d394af86934f783637b3279c2efa25faebf1e81987f0e0f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.741,
+        2.019,
+        2.464
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--khan-ngoc",
+      "sha256": "c09c09742248e376f35325b5d21e38fdc44f5a4f0a8c027f58fdb41e33d149e5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        7.693,
+        1.97,
+        4.034
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--khan-non",
+      "sha256": "65d34c82e5d5920d49b9499f2897dbc8769639ca87135d6ae9499a7b43bc21cb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.339,
+        1.404,
+        2.262
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--khan-tui",
+      "sha256": "a01199a48cebf9c589feb9b63c6d3c81fb56ab50952a58f2f6f5d3f21339047f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.833,
+        1.168,
+        3.01
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--ngoc-non",
+      "sha256": "b3b9140ff0440fd406c4cc6ab9a93c74cb508a057496e5839b9957dc6906fa86",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.308,
+        1.092,
+        2.338
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--ngoc-tui",
+      "sha256": "2b6add9e2d9454f456f1aef862de3a9d51911469b0f34cb9aa1571bb41392aed",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.53,
+        1.068,
+        2.29
+      ]
+    },
+    {
+      "key": "genz/tu-than-pink--non-tui",
+      "sha256": "536285be20aadcc13681f336b7aebe674bac9987298aee6e27f50f3ca3ede054",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.833,
+        2.353,
+        3.777
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--khan",
+      "sha256": "21b4819ed5a1979666c87ba77e727748fe85487e49098e1ca5c9fdfc1e69022f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        8.145,
+        2.184,
+        3.954
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--ngoc",
+      "sha256": "6c1fac677d19ee350b668e761f967d3f747ed055b60adaa32145bb7f0889ec30",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.849,
+        2.171,
+        3.904
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--non",
+      "sha256": "5465e669d4b612cc3cb76edc2b48070e5c2356aa9bddb356c477b5998ea21ea6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.35,
+        2.415,
+        3.64
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--tui",
+      "sha256": "acec7721a294fc9fb5e0a6557f6f3b02b4ab16e38c49a745209e04d54d7e3273",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.166,
+        1.34,
+        2.695
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--khan-ngoc",
+      "sha256": "45a0cbdad45f78f22c3d7a74b7db00f2dfae627ff79bcf7a3855fe953913f699",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.068,
+        0.989,
+        2.392
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--khan-non",
+      "sha256": "54aebfb777d035092e3b7b3fb3ccefc30fe2266829a466640fda068b93ab3c6e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.441,
+        1.418,
+        2.998
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--khan-tui",
+      "sha256": "e26f1cb381ce6428281ba67edd758ed6335a581ee64360ec53deb09de6865fda",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.383,
+        1.221,
+        2.256
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--ngoc-non",
+      "sha256": "1333738e65a47eb92149cd7b5e021d5de86229aefda6a4a90d90919c2d98c552",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.495,
+        1.647,
+        3.547
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--ngoc-tui",
+      "sha256": "44a752429fe47bd0add503ed002ec8a4adabcfdb70e41481f588331a9714f70e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.57,
+        1.592,
+        4.663
+      ]
+    },
+    {
+      "key": "genz/tu-than-black--non-tui",
+      "sha256": "6a862f27dfa73144ced3c1b2e36544992763dd9a65096e2ba6d09ad89f84a8ac",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.427,
+        1.706,
+        4.263
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--khan",
+      "sha256": "7602558fab6714f5267bd56284f02420b04346e0f0f1865deb7f0cd905421f9b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.384,
+        1.999,
+        2.014
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--ngoc",
+      "sha256": "2267a5e3c8c29bbadbb0661776ef410bb39a198256aa32fc9d0dcdf41818cbd4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.954,
+        2.023,
+        2.282
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--non",
+      "sha256": "8b56d1ef45737d50c3dd273b24ca97809e93a10263199d7f9a3b5754a9dab075",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.742,
+        1.454,
+        2.152
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--tui",
+      "sha256": "4599c6543f80f0f9f42fdce0cfb98bdf9c5c2492185bb0fa0f965885f3472692",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.319,
+        1.546,
+        2.455
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--khan-ngoc",
+      "sha256": "ad9110a6116fe67c0b01ec682296f731fd112ba5d84ae69594f2ee0e3f1ff167",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.415,
+        2.76,
+        2.604
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--khan-non",
+      "sha256": "55f286bb824bd1aeed05813300425cccf5211eac18af6f5f69b5937c90ec0cf1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.449,
+        1.545,
+        1.762
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--khan-tui",
+      "sha256": "2fa3358134618bc07d6d42e3417cf6a413de01832a0ee6927692fdd1b3af3d4b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.874,
+        2.147,
+        1.913
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--ngoc-non",
+      "sha256": "78e5580e1807dc293992fbe9f520230c60b8a9310f1693169bdd96108b643277",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.391,
+        1.783,
+        2.793
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--ngoc-tui",
+      "sha256": "399021a94c1a0b817b5b0638ab8fcf612d34260dc96b0c5aeaac824f4cc9b7c2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.829,
+        2.049,
+        2.288
+      ]
+    },
+    {
+      "key": "genz/ngu-than-ivory--non-tui",
+      "sha256": "9d16e19c2749fde2a6e2cff629c2347fb9becfcb9b996d0ff61b1d12ef800c27",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.383,
+        1.503,
+        1.833
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--khan",
+      "sha256": "52813320a21063811ba74f937ca3a1db69a428f036cdb9ebd6e20a4207279ce6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.203,
+        1.932,
+        2.249
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--ngoc",
+      "sha256": "f0b05ab9b54bb8336f183fcd248db23a088a9a5c1af1797445b297487c830321",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.751,
+        2.484,
+        3.264
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--non",
+      "sha256": "78e4be4c2c68067d84956c63e1bf550e3e7ae2872d4d84190368ab920d43e7b3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.018,
+        1.869,
+        2.303
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--tui",
+      "sha256": "4a8c44209e1d2fbba61c1e0f8ecc9fc934ed4a99a3c22d2973ad9209d4e9b0ae",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.07,
+        1.755,
+        2.549
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--khan-ngoc",
+      "sha256": "f2b56327c5d1cf897962df2732b84fbaccb9072b6f75da120a7ca46e70026cc0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.698,
+        2.007,
+        2.147
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--khan-non",
+      "sha256": "994cbd4e1b8d58ecacb69a52df8e5be860d939e5ce760bfa280828e523864c1b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.307,
+        2.311,
+        2.837
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--khan-tui",
+      "sha256": "c38add3903da262b722a159f2a2c8e9a27f3d58afbea49f9c52ea7270f9dbdb4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.26,
+        1.984,
+        2.926
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--ngoc-non",
+      "sha256": "8a06f0d2ddb4b88b18e56f4206febadbba8dabc67996c5c1d45b54714217ee10",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.567,
+        2.036,
+        3.133
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--ngoc-tui",
+      "sha256": "9fbd2785f41ac1f5c3e5a18a9972a0f7607658cfa42418e17b3aed297cec5b9c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.446,
+        1.604,
+        2.708
+      ]
+    },
+    {
+      "key": "genz/ngu-than-red--non-tui",
+      "sha256": "4acab9c4d24b9c4a61a1f1f640117d0015156fedfd4a4837b215244fc738a2ad",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.48,
+        1.892,
+        2.727
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--khan",
+      "sha256": "eb8ec992da6850f5fc4bb87b5289796c1108380f4a1ecea2abdcabe426097d44",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.492,
+        2.254,
+        2.887
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--ngoc",
+      "sha256": "d93091e584bd96df1a3baec752315d773d16053d043673f494810d941e624ad9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.771,
+        1.958,
+        2.368
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--non",
+      "sha256": "0ffc17128215d81fc7789530fedc67d9e94863419cbe3b92700c706b6c312c7d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.071,
+        2.039,
+        3.135
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--tui",
+      "sha256": "690459d615e5caad6ecd316b59afaee3cd51dc81bdc2d85eb84c82117c7eae4b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.756,
+        1.554,
+        1.943
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--khan-ngoc",
+      "sha256": "86bb42daf207b6bbfbf7caae0d21f41a0dcd2f0c1b5900bdab43dbf5bcb8cf1a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.281,
+        2.23,
+        3.248
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--khan-non",
+      "sha256": "af7b04f78f4b1fa28bfb60d2b8d15a7cbb1e907a60aed9b07eaac8a71a6798ff",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.017,
+        1.665,
+        2.518
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--khan-tui",
+      "sha256": "bf4b1dc5d4e026ccabc7bcd09b02e8ab7ce7f7b63b4000eb8bac7121f77c9354",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.134,
+        2.399,
+        4.665
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--ngoc-non",
+      "sha256": "68a1d38cfdf1c4af98fc9fd9af93912ed0ff104548263771900d8b5ea8f4c521",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.755,
+        1.794,
+        2.317
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--ngoc-tui",
+      "sha256": "f698748e9584bc7df82661da6499c6028e1768b7f292fc4608c17f4279b34a3e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.675,
+        3.679,
+        6.437
+      ]
+    },
+    {
+      "key": "genz/ngu-than-teal--non-tui",
+      "sha256": "616531579c1143148119e0725db2b9ba0ea48ddfcb28919032094fda467350d6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.732,
+        3.626,
+        3.079
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--khan",
+      "sha256": "029ea029794dd23cee885bfff0afa8994a4d4c54ca0596ef355bd92a7ff44c18",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.815,
+        1.579,
+        1.526
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--ngoc",
+      "sha256": "064dd00e1f8c3492280685733fead913075ff4d6b94cae077063ee7a1ceaa473",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.094,
+        1.324,
+        1.932
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--non",
+      "sha256": "7ae6f03e2ad68ed904b5373e9a5b520da50a58a35a505be9f13d482d075ea0b3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.93,
+        1.692,
+        2.008
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--tui",
+      "sha256": "abb807d55203ea98a25ff98c8b08b7394a13a669425a28d80ba9564a58745c4d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.943,
+        1.396,
+        1.977
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--khan-ngoc",
+      "sha256": "199871ccadc8e59a3e3d362877af8239ff8391dbc11dddd70b4fe6b0a42ee7c7",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.315,
+        2.188,
+        2.655
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--khan-non",
+      "sha256": "2473558c337c4d96e7d973763b703334c5acbd15627c6f29ea6365d9d063e1b2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.872,
+        2.141,
+        2.24
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--khan-tui",
+      "sha256": "a0a6c32e4617b6cf5043210d6f8aa4b5f001197a1d890311d20a10e7d7cb1b86",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.153,
+        2.086,
+        2.063
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--ngoc-non",
+      "sha256": "5ce379382897bebe5ff9c1e7a8442cbf78efcdf4afbda893e96a3faaca86d5e7",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.098,
+        1.91,
+        2.239
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--ngoc-tui",
+      "sha256": "10f14c0a2aeccd4f272bbc0713f58b0f64d98221512b9ac60677b7d2ace364ed",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.988,
+        1.661,
+        2.347
+      ]
+    },
+    {
+      "key": "genz/ngu-than-pink--non-tui",
+      "sha256": "f603802cb174db4dae411f1f509b5c83d5644172c4069918477ad25f29d38261",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.941,
+        2.201,
+        2.2
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--khan",
+      "sha256": "cb987d4293fab44a41f10dc5d2b09047a879ee196d5f3bf3ab315c03e9ac2892",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.24,
+        2.864,
+        3.673
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--ngoc",
+      "sha256": "601e6d947557d7da0331ed445dbdb2f1ca4e6a659d57a388725db3b5cd6518da",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.557,
+        1.456,
+        2.114
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--non",
+      "sha256": "ae09d410fb655e15513b903d7a5061e6f0da43545ec39ab8c932855d7a60f67e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.345,
+        1.92,
+        2.035
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--tui",
+      "sha256": "15cda62898875ef277e3c1c8f523cf6fc9b1034b9b44d4ac93c37791f79a05e7",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.559,
+        1.769,
+        1.781
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--khan-ngoc",
+      "sha256": "4ae5da39af76a3f05bdb54bc3e399057f0ceab8c987fa1f6d25910374453f8d2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.787,
+        3.831,
+        2.901
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--khan-non",
+      "sha256": "32fc7c7273350041146da82b077199c6ed1d5fe1567ebcd87131ba59f9c8fbe0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.55,
+        1.925,
+        4.015
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--khan-tui",
+      "sha256": "aff483bbb7787b7f869cff8a16036338696f6d572d0ad27faf4c020ddacfd277",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.081,
+        1.584,
+        1.923
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--ngoc-non",
+      "sha256": "e2c80ea7417c69111595f3020c2fccb5c4da5a4042a6e2b4e4ab34576f275273",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.964,
+        1.767,
+        2.423
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--ngoc-tui",
+      "sha256": "df29880dc70bf9cf3304c676bb6bec288e37c0e1bed386138fae6c1fbb9d99d3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.88,
+        1.732,
+        1.91
+      ]
+    },
+    {
+      "key": "genz/ngu-than-black--non-tui",
+      "sha256": "9c85c87e48af61d08265ccb956dd1c8a65659dc7321f6d156bc6ebbcb63255fb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.125,
+        2.808,
+        5.035
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--khan",
+      "sha256": "ec4f51e44ceb08462b240080a1d17908a0835ea6914febb9f770135d486685d9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.944,
+        1.953,
+        2.418
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--ngoc",
+      "sha256": "e5ddf0c94aabca5eb3941a97054cd5faeb67282a3ba9825fbb8a3dcc41407c8a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.953,
+        2.384,
+        3.071
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--non",
+      "sha256": "8f246c82693a981af7b89af1b5f5d4c955357109dd00dd11297cdc26aa8b52ef",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.867,
+        2.186,
+        3.343
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--tui",
+      "sha256": "38831e239cd9d31130e7621f2986c94d69d0d21c3a4092bc174942af633288b2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.421,
+        3.265,
+        2.977
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--khan-ngoc",
+      "sha256": "0560492ce6a605325fc45cdfc8e06ce9caa2928ae23979e3fe35a7edc3fc7bfe",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.293,
+        2.195,
+        2.462
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--khan-non",
+      "sha256": "3f5e5c6ddea3508106b723ebcf2f9d20bbc18c2470ab7266fa2a37506bbed22f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.23,
+        2.053,
+        3.533
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--khan-tui",
+      "sha256": "93eb10917a8cdfc030d870f2cb2a2e1820bfbcc4952bfd288c30aa442172dc4e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.842,
+        2.012,
+        2.487
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--ngoc-non",
+      "sha256": "7f0f2e002df61945332ff08ec96ca9a00ef13303c59136cd1910a5036f3befc2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.486,
+        1.826,
+        2.481
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--ngoc-tui",
+      "sha256": "4975686ec7b42fe6411bd917d38506eb2d7b7cfba29a954d96641b3a01ea9d31",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.844,
+        1.504,
+        2.123
+      ]
+    },
+    {
+      "key": "genz/ba-ba-ivory--non-tui",
+      "sha256": "c737a3be0e6863d1cff71c3627c2790741988e261f7b3db19f9317359b0df9c0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.189,
+        2.332,
+        2.458
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--khan",
+      "sha256": "e8d2f9fa45a9194c65eaa00d3d008a32fd01c1a537e3c6b101b737d1d226ac9e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.113,
+        2.329,
+        2.753
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--ngoc",
+      "sha256": "754650a1916d09916f23be0a5ac0d7de78c4c4ff688395696269078d7915bf5b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.239,
+        2.178,
+        3.023
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--non",
+      "sha256": "125e9d9f43e75e68233540903bc60ba43080e368a6b5b3984b0c926f5e01eb3f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.096,
+        3.05,
+        3.448
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--tui",
+      "sha256": "ce7c64f4ee93d7c13a6f5b15fc86ca521cb54f6a77e03b10e7921f36d5bb0097",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.154,
+        2.726,
+        2.791
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--khan-ngoc",
+      "sha256": "d11dde44e092bebeb3bf42e61bfac2e8cb1f42806cf878df88a209c0bf01c807",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.066,
+        1.721,
+        2.166
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--khan-non",
+      "sha256": "387f8de6a610dd3fbdeaa9ccfdad1b9955db4f29aa07d3c11b64e00e1f65b261",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.36,
+        2.702,
+        2.958
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--khan-tui",
+      "sha256": "4cb60e60731235fb8035d61e680863b453d3a528cbebeaf071001206cbf60c23",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.854,
+        2.248,
+        2.2
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--ngoc-non",
+      "sha256": "7683aacb377361cff68c3c79a09bc12287c89b8467b39087356e131484902ce7",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.819,
+        3.21,
+        2.861
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--ngoc-tui",
+      "sha256": "dc874026d7a6e3613a3996ae101161fee0e43ac2b89579fd475ac5243d58589e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.848,
+        2.447,
+        2.419
+      ]
+    },
+    {
+      "key": "genz/ba-ba-red--non-tui",
+      "sha256": "8ab9ae1c7e03551bf6380f8c85988d27e6831a98b79f7a93080f377fe938285e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.87,
+        1.398,
+        2.066
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--khan",
+      "sha256": "b48f3a6b240f23771ff4ba5216998724debceae24e1c5171212cb7fbf13d9dc5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.891,
+        2.319,
+        2.092
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--ngoc",
+      "sha256": "a7992bff59a42e5df225753a74318af752c133b4fdfe77a83603944bd20a44bc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.912,
+        1.908,
+        2.179
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--non",
+      "sha256": "4d618ced396497882f2d958b38dc25704276d74abf092b00d03def55aaa71bcf",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.111,
+        2.472,
+        2.432
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--tui",
+      "sha256": "cef3c0ad785236cd46d516e1bcf7d9ccd668e31ff561a78cd50e129506749fdc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.381,
+        2.454,
+        2.701
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--khan-ngoc",
+      "sha256": "3d4bd1c7c918ef2ee08985fbe19bc414a111bbdef664c6cbb49c173bfc978b7e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.124,
+        2.822,
+        2.376
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--khan-non",
+      "sha256": "ff2c1d07d90a0c7b15eefff27b1039abcccb860f780c037a70e1fda11b8592d0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.251,
+        3.569,
+        3.595
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--khan-tui",
+      "sha256": "cf3fac3735bcd339a234fb9f3a0a9ca59d76a0ce41070033aa425a0e89157003",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.831,
+        2.057,
+        2.311
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--ngoc-non",
+      "sha256": "ff8b032a4d9141589937475474ce5bce380afe1482ed1f4e0beda98cfa35fdbc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.146,
+        2.297,
+        2.403
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--ngoc-tui",
+      "sha256": "f444e3bd4eb5e5538b34ce5a7dae2abca5b93097e28098e1fe4be4525dffc49a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.077,
+        1.974,
+        2.177
+      ]
+    },
+    {
+      "key": "genz/ba-ba-teal--non-tui",
+      "sha256": "5841e5526d99ddf8ed9e64a3fa3faa90f69e0a3e6596786b2dcd684d4535255d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.07,
+        2.29,
+        2.248
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--khan",
+      "sha256": "084f2e655a4be7b8b0222955870ced245e72e71050624ad6f1e7fde86e09e804",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.634,
+        3.279,
+        2.813
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--ngoc",
+      "sha256": "63a85ee02013116b39e3447276624438313bdd76b87f0ed3ac189b98bb9abbb9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.114,
+        1.843,
+        2.538
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--non",
+      "sha256": "4422ac2d4661ae82339d8fee3f3220f934c30016ec007ae303fb34c45d65ece3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.585,
+        2.75,
+        2.698
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--tui",
+      "sha256": "08ad9e1318352c0db31a9c9571ab38768504663986c186eb4ad8c97de95ed9cc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.796,
+        1.796,
+        2.456
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--khan-ngoc",
+      "sha256": "86d5aca1189f3489e48a42e4dc2f50f4a046ac629d4801733ee268fe606bf1a4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.652,
+        2.636,
+        2.799
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--khan-non",
+      "sha256": "6a06f64be388a92811461515849b3bb479a27e24c329449045ccea6ad7f911a1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.158,
+        2.439,
+        2.522
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--khan-tui",
+      "sha256": "e8482f7022567c6fcfd1176ca9c65604cff9349ebea3e46e5e0f65cd55bc134b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.435,
+        3.686,
+        3.553
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--ngoc-non",
+      "sha256": "928a7669f6524faecbed024b5fd943318d2c728ab398408660f6e3cf84c8473a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.705,
+        2.842,
+        3.115
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--ngoc-tui",
+      "sha256": "2e7d45dffe7702a96fb2fe946ca78209a7898fa71ec5e91f288059017cbc7e71",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.836,
+        2.042,
+        2.687
+      ]
+    },
+    {
+      "key": "genz/ba-ba-pink--non-tui",
+      "sha256": "b25719897ad5352f851af6d29ff82c000b2e45535066adb9fb0b0ce80b89269c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.871,
+        2.197,
+        2.529
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--khan",
+      "sha256": "208ea130f152a50ec6f18c441c413dc314e8ed4f7290290c3b2513cca7e730c4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.628,
+        2.554,
+        2.802
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--ngoc",
+      "sha256": "e7ee83f5d21ffbe9e2b2f34138fcec06de231c84bb6dffbc7c8459e47e91a3f2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.992,
+        2.705,
+        2.714
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--non",
+      "sha256": "410f2f2df0d2c2becdb6b51ecf813ba3cea535ef3657f8161bae64d60614c821",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.023,
+        2.194,
+        2.267
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--tui",
+      "sha256": "bc210f5e7c058388d9bf14c326a7a950f3e01fcafb15e93c7fae7de30e9334b2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.184,
+        2.821,
+        2.876
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--khan-ngoc",
+      "sha256": "2235b9087787cc9c0b6fda896d938f2bdcc633b9ed43703438dcc83041488e2e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.868,
+        1.959,
+        2.281
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--khan-non",
+      "sha256": "40040954c2d4d779f9ce556c89e2b2d71ec9256958c98ee5369eb0291f233a39",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.944,
+        2.705,
+        2.486
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--khan-tui",
+      "sha256": "d202268acfef5f9e6fc6e55cc541c63a429e590a33c52e54f68004993eb27d96",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.273,
+        2.817,
+        2.326
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--ngoc-non",
+      "sha256": "53a9b75ef8eda9224cf5b69670ca49b7eabdb82377a317fc8693c9be6c06ac92",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.921,
+        1.956,
+        2.319
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--ngoc-tui",
+      "sha256": "0a1231025500d1f29192a6b66e16f4ed3eacf77ab43e0aec26a56bf289c95781",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.791,
+        1.96,
+        2.271
+      ]
+    },
+    {
+      "key": "genz/ba-ba-black--non-tui",
+      "sha256": "1d7a65fb667eba7fc8540da768bd81625974492be9b9752ba492ea4e8d2101b5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.324,
+        2.531,
+        2.241
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory",
+      "sha256": "1776056764d50fad5b1c925953b7291f252f7d4f7fde2e9e7561649d71a43ad1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.289,
+        1.854,
+        4.269
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red",
+      "sha256": "6baade2b93dff5a610c42ab572a3405f30f156d28f6d66b013f7274fa50135fc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.195,
+        1.441,
+        3.338
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal",
+      "sha256": "c5cbec384402db6457ef61bf2871b30a15e2d5f0d9fe49603894f18fd996c759",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.1,
+        1.839,
+        3.214
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink",
+      "sha256": "fb7591e7bbcca1120f671fe2a17d7f669d960c6d8f44148106d7657a274638d8",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.262,
+        1.809,
+        3.668
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black",
+      "sha256": "4db2ba24cc7d5672cdf6924c8b20255c6e9c4cc935bf0040719dd3b2c45844d2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.581,
+        1.939,
+        3.337
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory",
+      "sha256": "192c5d7a6c93e01395de58089b8efec9f4d74f7c0466df6fe171081a18ca81b0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.272,
+        1.676,
+        3.836
+      ]
+    },
+    {
+      "key": "classic/tu-than-red",
+      "sha256": "dfce82a49a5c780dc59703aa12ad3e5cde5585a0546624e02a8a68a76684feec",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.759,
+        1.229,
+        2.439
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal",
+      "sha256": "990b8d1f3a5e353859e551661f52f7628d3425d42794eb6dbaf6ddfc5f3e8cef",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.02,
+        1.018,
+        2.54
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink",
+      "sha256": "28c27633fd1e7cce6733ef5b19e182a97841a18f5a5263ac9b49f9c76ecd93ce",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.505,
+        1.61,
+        3.353
+      ]
+    },
+    {
+      "key": "classic/tu-than-black",
+      "sha256": "17c081b831ac3524bdaca5f33d0d968715ecf8e24a8549966314a4dd83aee6d3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.007,
+        1.054,
+        2.508
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory",
+      "sha256": "55cade1ef3c8f039326d5ce4a70b817ea6fea7ef489a3164482b031f0b5aab27",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.765,
+        1.458,
+        2.116
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red",
+      "sha256": "da0920388df61c5bafa8745dd6d4ea134be9a402e75bf8258c8f53dcd7c8120e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.189,
+        2.859,
+        3.437
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal",
+      "sha256": "6667647f54f11fc6c75b4e160330a8257292416b13d658e569b6685fee97f78f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.558,
+        3.382,
+        4.513
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink",
+      "sha256": "5e42591d443b8feaf566e4cffcd4fcdb55837e85fbb6dda9af6fb73d71dccbdc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.06,
+        2.504,
+        2.428
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black",
+      "sha256": "8ad4f350ac33b98a83ce0a8aae372615996bc262256e53fd8dbe7f84e919459f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.041,
+        2.103,
+        2.251
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory",
+      "sha256": "cad70c8f49bb1fcd305989460b4f94e93433c0af1d3a499ca405995a21816440",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.983,
+        2.505,
+        2.634
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red",
+      "sha256": "ed8c12f089f46c44a28adf62b8df74aed4ef4d287d7aa12a784f469815a2e1b6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.303,
+        2.989,
+        2.417
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal",
+      "sha256": "4825c248bb4231b08c24cecbdbea59fc97d89b674983ae546aa7ae673f1025ef",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.026,
+        2.077,
+        2.373
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink",
+      "sha256": "b61be244deb72c511a3d080d751b8e9645346e5d688716439542b40ba5b6fd6e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.95,
+        3.504,
+        3.619
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black",
+      "sha256": "77fd8a47ca15dd3ba1970bbdc6ec22945fc729714efaa2103de04fe27c9c3849",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.198,
+        2.613,
+        2.793
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--khan",
+      "sha256": "d00e07d5ad8464b449d314b4d5399423dcc25bbce6cf9acac6d81fbab9930e43",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.889,
+        1.362,
+        2.473
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--ngoc",
+      "sha256": "0ecf7f52f17fe88f88c0ad8a45f228728732128d70153a14ec86b9fba0511772",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.799,
+        1.423,
+        2.249
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--non",
+      "sha256": "9298ac82fbd8996646a126aa6d55453abc82faa7ba5864528ee5234fde51b7de",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.148,
+        1.392,
+        3.755
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--tui",
+      "sha256": "598bb5d7290d9f99a2b584c992deef2a9fe40b8aa086c415b01aaf4c480a00f1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.131,
+        1.562,
+        3.526
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--khan-ngoc",
+      "sha256": "4b18486eaa7ac5edbbd6d78c8942fa821806c33cd04cf9bc0fde83353f3a989e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.565,
+        1.472,
+        2.17
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--khan-non",
+      "sha256": "ffe4841365f7012aa349006a1eea383587b34a25e8426e0ece549a2ff7cc07e2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.987,
+        1.009,
+        2.112
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--khan-tui",
+      "sha256": "9209c9f8db0349d3dc7ba4e34c123b5cea0796e589f1f75917b36550f349aea5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        8.211,
+        2.333,
+        4.226
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--ngoc-non",
+      "sha256": "2f53363f7bc34e474f6c8c5a81584268d63e6e732bec144fc0d2212a7817f95f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.588,
+        1.847,
+        4.183
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--ngoc-tui",
+      "sha256": "ea139bcdf0f9a64718c277b90ab10d1ade051f460d916f47d276b3233f70ef09",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.891,
+        1.228,
+        2.24
+      ]
+    },
+    {
+      "key": "classic/tu-than-ivory--non-tui",
+      "sha256": "6baf43a30944fc5ad3239f6292e3a9c382d91d91fe6c44fe60236bbe52066d62",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.684,
+        1.85,
+        3.997
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--khan",
+      "sha256": "db79e0e2ece3496a92373f0975b7dba8bc39e29137a13bdd1ae017a3bf386c52",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.072,
+        1.054,
+        2.409
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--ngoc",
+      "sha256": "1a1ca19f0c6658f3d34b1af96f543b250bc80d0e81b0b56714fff8fd2347f95b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.046,
+        1.333,
+        2.551
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--non",
+      "sha256": "2bf86c824afb4f881f5e0021972db675700963b2b4bccfe84603f0bf63efc487",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.107,
+        1.341,
+        2.88
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--tui",
+      "sha256": "9179b99134206ba5d20982977eb8a86b5b184eb962ee82e4254c1ba04de21382",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.643,
+        1.851,
+        3.691
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--khan-ngoc",
+      "sha256": "86a43002ebf682c12857b9190f071a1b0a2df454d399ca9b03b502fa16055e46",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.71,
+        2.179,
+        4.26
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--khan-non",
+      "sha256": "bd4b1d24bd0cb19eb45037d451b7679a21363472b24950fa750fdfcefdd08e97",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.758,
+        1.56,
+        5.083
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--khan-tui",
+      "sha256": "c02f0b6c57c9cacfa73c11a7b314a146842fabc9da146daa7b8f35b52137f780",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.264,
+        1.385,
+        2.546
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--ngoc-non",
+      "sha256": "cb5454342e55e26387732d02ad551826899bbda0ac7282e7f05d311073e4f9ba",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.045,
+        1.18,
+        2.716
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--ngoc-tui",
+      "sha256": "525f59aea06bc8ef19b6e978fc3d6bcca9f9b14ea9b7ba1a7e46c2d68401dd8d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.746,
+        0.977,
+        2.45
+      ]
+    },
+    {
+      "key": "classic/tu-than-red--non-tui",
+      "sha256": "10152bd1acffef623b0bdc4afe0f34e00dfe1388a6fe90a614449366333a1ede",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.59,
+        1.111,
+        3.151
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--khan",
+      "sha256": "016c17bf711554a3ae01ebc6fbd2d04ae2edee97ed81f71c1f18c715e9c0229a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.216,
+        1.058,
+        2.26
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--ngoc",
+      "sha256": "11017448f992c25c475592b0ffd0bbae1213f44f60d4d9ec5cd107522d8ab80e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.819,
+        1.173,
+        3.33
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--non",
+      "sha256": "4d53601f759021054a5a3a80ded6153bfd1b1234e9a269876a1930030ed79d39",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.722,
+        1.363,
+        2.801
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--tui",
+      "sha256": "93dc04fcee77f35c6e760635fdec583c0fd6e5e83b9b9f15a78feb623c2b5d62",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.684,
+        1.016,
+        2.342
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--khan-ngoc",
+      "sha256": "8fd4deaf9b6063cb08238cacef2131ef4b21ccca639f4d4027dda5833168c254",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.444,
+        1.305,
+        3.121
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--khan-non",
+      "sha256": "4bc8fa027e3a6cad72514920a7fa502dc55be9e7cdea4baceb2eaa2343b0154f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.484,
+        1.075,
+        2.729
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--khan-tui",
+      "sha256": "ff4166931a9b7c22e57d677c987bcc3775caf7b7dd0e8ebb3242ffd6218ee4d3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.198,
+        3.552,
+        4.548
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--ngoc-non",
+      "sha256": "34a6c2e5bc467f74ed7599c3ccad25149d24a333c1436cf6c07b6dfae5a3066f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.193,
+        1.527,
+        2.97
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--ngoc-tui",
+      "sha256": "3f872aa4aa5e5b8a97240cf379c79b94d09e4f984bc697ea3c4af699e6bb64bb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.483,
+        1.586,
+        2.711
+      ]
+    },
+    {
+      "key": "classic/tu-than-teal--non-tui",
+      "sha256": "2a71a54b236f18eace558a200398cfbded91f4c79e02810efc49305aded6b1cf",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.822,
+        0.966,
+        2.271
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--khan",
+      "sha256": "3a50270c3572ca87903aab0c914c541824a394bc4877494463b4ce866b367ea2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.541,
+        1.69,
+        3.401
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--ngoc",
+      "sha256": "3db6d2498cbef57d58765290ef6beb9f8b874ecf88b046cc3e8b64cae6556210",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.216,
+        1.115,
+        2.357
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--non",
+      "sha256": "15dc612d2433e638caa736095d550fb08cdf6215589e320b02c01bb2729acd59",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.594,
+        1.78,
+        3.301
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--tui",
+      "sha256": "1b3adee758086b4024c9a65753516f2ef11bba665a1134642ae917fc4aa98d29",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        6.54,
+        2.212,
+        3.698
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--khan-ngoc",
+      "sha256": "2a8681b8e7611d65a421398b4cb0ff3cb7f9219532306825017b21347a7f65d2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.017,
+        1.111,
+        2.755
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--khan-non",
+      "sha256": "a7ebf72ab0db2bfff5d0a7ef8e900ec9b7a3aa24e5e53f197dfb160a953b9ff9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.886,
+        1.608,
+        2.903
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--khan-tui",
+      "sha256": "6f54b9cdd5352c70410a1781d9f4203e01563179d5ecd958a69f3fa9aeb64cbc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.421,
+        1.143,
+        2.403
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--ngoc-non",
+      "sha256": "7acdbe8741ad3d2471dc689a691a9b99bbc77e18f47b46180bca1cd1a5404259",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.754,
+        1.489,
+        3.071
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--ngoc-tui",
+      "sha256": "cb5f307bd701a2343a287b923e6f496c82a3481c4c34cbbc9a4d2d178a6bb1ba",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.667,
+        0.805,
+        2.229
+      ]
+    },
+    {
+      "key": "classic/tu-than-pink--non-tui",
+      "sha256": "543e6976219abec96bbe7bfb47a5aff70c365f2b29f3b3381b464ad73bcdc48a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.53,
+        1.071,
+        2.284
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--khan",
+      "sha256": "41fce8c14393e97872482b358e57b48d243fa41d9b5d372fb136a6c873fca09f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.012,
+        1.173,
+        2.344
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--ngoc",
+      "sha256": "3ede8ba8ea2eb80919f50ded07c0bdcc888d18fa1a7af837eba9fd33b03aa052",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.939,
+        1.072,
+        2.379
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--non",
+      "sha256": "15568aba49d695bfce8fedb2a6b46a12a29a5d265b4bd6798555851d98deda02",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.32,
+        2.391,
+        3.482
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--tui",
+      "sha256": "462fc6cdd1edcaba83cedd1ca03e49a43c0b2af73912d4c4d4cdf2d515d482d9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.85,
+        1.308,
+        2.225
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--khan-ngoc",
+      "sha256": "4a17e6e86e37689f3f73beabb66cb42ff3cfe8d0de438faf2d2a988c61fe67b3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.761,
+        1.021,
+        2.244
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--khan-non",
+      "sha256": "bd5497092468711e77f2550d7fcdcda2393df0b8873c374656617c0681b3a405",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.031,
+        1.317,
+        2.352
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--khan-tui",
+      "sha256": "856f4461601dd4c5f443d5756cc484def6bf68d48dc6ea85c30373699268b70a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        8.076,
+        2.001,
+        4.587
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--ngoc-non",
+      "sha256": "3be5da9d6d35ee1f2144feda6b1e2157b6eb73708ff0a73aeb0ecf3f43bed723",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.294,
+        1.169,
+        2.562
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--ngoc-tui",
+      "sha256": "0f3eff425b4cdaf39e402e21c74f913fa29f6697c01d1a41c29b06f6c97d6e6c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.533,
+        2.233,
+        4.151
+      ]
+    },
+    {
+      "key": "classic/tu-than-black--non-tui",
+      "sha256": "a7c3e1007ad006f0f6cc40656c1497441107cd55a5d4c63235f987f79eec8cfe",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.774,
+        0.962,
+        2.308
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--khan",
+      "sha256": "fd4c2fa67050d6fbd94b98218bfab2564b42a01ef7c9abde90a278a3dcfa0138",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.568,
+        1.491,
+        1.884
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--ngoc",
+      "sha256": "aad2ce6842097f7ef11205e889d7d86ef924850902d4a5f30ea901b271723dee",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.416,
+        1.636,
+        1.962
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--non",
+      "sha256": "17ccee8c67dfa87c4a60993c1f15a7e978f0d7e113b49c0c44b7daf5410b1fec",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.949,
+        1.59,
+        2.054
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--tui",
+      "sha256": "bd3fbee35db8140f7a01ed32193829ede0224cc7493b39efd324e0630c2b7961",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.239,
+        1.765,
+        1.856
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--khan-ngoc",
+      "sha256": "d6f8640162a737b2b277eb6c245dd39780da6e7e1e44963f1dbeab7aa86fc5c8",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.415,
+        1.779,
+        1.664
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--khan-non",
+      "sha256": "86f43bfbdfff99465b92ae33938f996b5dee8535e3fe443788b7f2129b9d2759",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.139,
+        3.536,
+        5.637
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--khan-tui",
+      "sha256": "94a05b403f7c7423bbfaeaad452e546cbbc94c5e4e54ec3b40c7424d31e86a57",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.064,
+        2.531,
+        2.29
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--ngoc-non",
+      "sha256": "eba89f73d125bbaba0c9ea9c3748ec9cb490a2690b8ff5ee6e7361689edac190",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.828,
+        1.469,
+        2.157
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--ngoc-tui",
+      "sha256": "34ebde30cb8ecfdaf88b2541863da10ea939736de9c72203d83a5f4b7d8bc5af",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.492,
+        2.099,
+        2.526
+      ]
+    },
+    {
+      "key": "classic/ngu-than-ivory--non-tui",
+      "sha256": "d6d8661ead478471f0fa433a992b116d85d7843ed0da993ab8708997cd2f4e0a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.51,
+        1.896,
+        2.332
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--khan",
+      "sha256": "3fdeca9ee30f19142e3def589f5823b3de0420fc5ffdfb4abd1f9fd051d06902",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.96,
+        2.248,
+        3.145
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--ngoc",
+      "sha256": "2dd17e5b30623b911a2162f31cebaa53b326f79bd3797e15ffd65f8ab27d8c91",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.738,
+        2.433,
+        2.434
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--non",
+      "sha256": "bad7164316077d189bd0e2f5780e9c598eabf22b9a99e32b9555cb7dc1d129aa",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.587,
+        1.465,
+        2.062
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--tui",
+      "sha256": "347aeda107acdcb5ae6de3c39cd91665c6a4cd2ba972bae23c3d31414c72a869",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.173,
+        2.013,
+        2.754
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--khan-ngoc",
+      "sha256": "1fd3ba7009ea0d05e90d5e8296516ff831c5ff1558650d84c41b4bbc44ab1618",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.784,
+        1.673,
+        3.253
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--khan-non",
+      "sha256": "7f362c176b7781136ebd64459a7529083550e5e8e4ce6fa164ee59c663b86835",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.362,
+        1.691,
+        2.096
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--khan-tui",
+      "sha256": "4f4b2adde888a62b9151abe0b9e8d4669f86c522b0cd4c699981e9ca781f828b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.505,
+        1.804,
+        2.591
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--ngoc-non",
+      "sha256": "edcb3788064bccb86bcfecbad80a5888dab7a74ce76ee7724d85026f3e9bfb20",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.956,
+        1.954,
+        2.136
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--ngoc-tui",
+      "sha256": "394a5c70b64e8febc87d9005982ed91cc2a60093d66382e72b1077c220882552",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.775,
+        1.768,
+        2.442
+      ]
+    },
+    {
+      "key": "classic/ngu-than-red--non-tui",
+      "sha256": "a6690eef982b14c020829c3fb6dc336ee0738a6f47c2677025582e22512b3cd6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.525,
+        1.455,
+        1.878
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--khan",
+      "sha256": "fe967f53a0f9be791f462373659b889da101643b2d1b0f26ae1c4c99b625f401",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.683,
+        2.533,
+        2.65
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--ngoc",
+      "sha256": "62691398d191f0e1bd36010938eb3a7b06300222b59d3270839d59b9ff025c15",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        5.502,
+        3.993,
+        4.852
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--non",
+      "sha256": "542c5b3d2da486aa322b7fcbd81468b97a007c1e68cc4eef4708b3d00bac1831",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.192,
+        1.885,
+        2.578
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--tui",
+      "sha256": "a745f45cad2084ab735253ba898e5362763a8302dda67a2ab38c42937091965c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.159,
+        1.931,
+        1.98
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--khan-ngoc",
+      "sha256": "492a7f6a9703500f49018dbd824b45bdfc7cb9c794c7ffe57f294e25e5a2db18",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.437,
+        2.398,
+        2.888
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--khan-non",
+      "sha256": "a4469a5c6cce233be37e19cc2e9dc1dee91b178587ebdb925422f70dabf1bdbe",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.557,
+        3.173,
+        3.004
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--khan-tui",
+      "sha256": "a2a7f0c10d063012a4390c2820e35d098013f14bc7e98caf0a33769c636abe42",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.015,
+        1.587,
+        2.016
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--ngoc-non",
+      "sha256": "bbd348db0f2469f738b06670392d612b399d84a522897ae0635002efb4f2d267",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.873,
+        1.828,
+        2.35
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--ngoc-tui",
+      "sha256": "69d1ae206efceb180834deaa012291083dcdc1be1b0fec1554147b2e8b72dcc3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.948,
+        1.781,
+        2.163
+      ]
+    },
+    {
+      "key": "classic/ngu-than-teal--non-tui",
+      "sha256": "dbdef58a409490c4ae3ca613794e1b8dc2afde069c8d7d69b66f0f191d4a47bd",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.693,
+        1.503,
+        1.936
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--khan",
+      "sha256": "cb7f34d3d7ea6564b005c07b68176572225ec0d1d60cc7ad3c2d9f1118bdc22e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.672,
+        1.192,
+        1.609
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--ngoc",
+      "sha256": "3e5ba0c665ac3395adb784b75241e1520235afef886d6677938587197c0a7220",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.88,
+        2.346,
+        2.349
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--non",
+      "sha256": "3be555d91714dffccb5a8e9b99fc13c5c97638c1dae072529c0c2c4391a4c1b0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.496,
+        1.738,
+        1.702
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--tui",
+      "sha256": "a97936ddf53d15f0354f7889753bdf45f068222063917bbf10bcb464091a44c6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.083,
+        1.784,
+        2.404
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--khan-ngoc",
+      "sha256": "405cd5ccffe00dfd4fcc7a759abc46b54260ef8c2d631246dbc0b35224d4d8d1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.735,
+        2.354,
+        2.555
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--khan-non",
+      "sha256": "e8a542ea716d316918ffe54587cd0bd2ab450bac07c81e8cdf930fa8cf95bb30",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.636,
+        1.143,
+        2.014
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--khan-tui",
+      "sha256": "b0456720a426f05cd9b7b31a8741b08fa69781bb7954b5f779cbad5002a810b1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.185,
+        2.124,
+        2.826
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--ngoc-non",
+      "sha256": "3be3ab2a5f025eba7d4a56315b2a5378f33633caa60b649184e4e04b568aefa4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.581,
+        1.551,
+        2.021
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--ngoc-tui",
+      "sha256": "b12d61901537832df84f224b62bcf3546c5e9fe05e2fd56ea67df9296bbfd082",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.379,
+        1.271,
+        1.722
+      ]
+    },
+    {
+      "key": "classic/ngu-than-pink--non-tui",
+      "sha256": "e7b5662b214c0027e3e4e53d573835fd2778e63ebaa23b0a63af7c0b63a482c4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.834,
+        1.871,
+        1.953
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--khan",
+      "sha256": "cc227dcfb6959736380caa92d063dc4daf21063a9b6058ee2654268269ee8c31",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.549,
+        1.382,
+        2.562
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--ngoc",
+      "sha256": "b2985d089a50e81f416fd6eaa92a1b073a30d56164e21f0ee6090236fc8239c9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.78,
+        1.698,
+        2.07
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--non",
+      "sha256": "29310113060741ab1b242d15706f6902d53a1aa9c298386b7159eeb9dda816cb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.232,
+        1.794,
+        1.963
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--tui",
+      "sha256": "2bd90d05b596b4add10b1c94cd34b92ae5bf91ce0bc817b200f4a7a77b411219",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.945,
+        1.526,
+        1.858
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--khan-ngoc",
+      "sha256": "cb26e7ffd95d7f31f70b67b7e2fa4ae923960db3f3622abdcce5c3d0b4e98401",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.928,
+        1.762,
+        3.048
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--khan-non",
+      "sha256": "10fb3adf7ebf42ed64f143341feb6b9f07b7e42b05b595a6f079a7a92c5ce090",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.665,
+        2.656,
+        3.222
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--khan-tui",
+      "sha256": "f88261231a5428fa51a58b6db63a16c3d1b5c75dace74b8c6a2210eb044ef145",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.858,
+        1.603,
+        2.482
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--ngoc-non",
+      "sha256": "3543684dacdb71579503179500d330e3b72db1731d0c18443d6127ce5dbcec4b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.807,
+        1.881,
+        2.885
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--ngoc-tui",
+      "sha256": "0f930acbff849ae2637ff386e730b146efcf195deb1b65241fecf47b4922e032",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.648,
+        2.435,
+        2.649
+      ]
+    },
+    {
+      "key": "classic/ngu-than-black--non-tui",
+      "sha256": "8459ec898b75b5842d626a1e7f97e7d41ff29e86150c9e2597f98aca8a0db9e6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.919,
+        2.033,
+        2.638
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--khan",
+      "sha256": "0ab7cc7d94b2264dbbf4f678a6c6d3a8daec3882806dc53dac292e51d1325189",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.956,
+        1.827,
+        2.455
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--ngoc",
+      "sha256": "a319d5f32db3dbcfd8a057fce188939d75e1bf21a5bab6790fec8b3b5d953b9c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.988,
+        1.849,
+        2.622
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--non",
+      "sha256": "0cd887d89eb5e288a00e34af19e023c112c8f0e88dce2f7bea601b40d1ce9e48",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.014,
+        2.097,
+        2.301
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--tui",
+      "sha256": "5e63ef9cb5a8787a2c2bd5319f46e750b4522d7b2b7706a9c4027feacbf8bf7e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.534,
+        2.198,
+        2.354
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--khan-ngoc",
+      "sha256": "160cb10071e1738c249a80422b7d16a4e65dcc4592f3363a225bb21e6312c96a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.246,
+        2.488,
+        2.279
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--khan-non",
+      "sha256": "d7d88096f837545bacd3e539db2aaa34f2702e4777fbf669cc9466a8692064c9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.171,
+        2.446,
+        2.652
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--khan-tui",
+      "sha256": "2d6d7681900952502a6dec0c23740671fe3faea89fc561fb6e7354da8438ea15",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.085,
+        2.179,
+        2.44
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--ngoc-non",
+      "sha256": "31029e6f1f2953510488f8899f0e92a2dfe78982265bddc8ef695e1b7e9a6440",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.235,
+        2.654,
+        2.864
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--khan",
+      "sha256": "6afe3151200091cad7033e8b6918fa63a04254e5baddc7fd68a1c4d1c6a88e24",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.039,
+        2.098,
+        2.624
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--ngoc",
+      "sha256": "2dfc13d099a571780babd98675a14ed66d59fdfd28f92e791dce0a55a9621716",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.14,
+        2.233,
+        2.419
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--non",
+      "sha256": "d0d348f7d3c0222f27d66dbc41865f88a2ee6a50ee667036d6724d598ebc947d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.887,
+        1.943,
+        2.95
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--tui",
+      "sha256": "d8c0c24598b24223b39733da33165e9cba9014f673f05bfc4825603f52c8d6c3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.059,
+        2.138,
+        2.27
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--khan-ngoc",
+      "sha256": "4d233057bf5002dbef52bd4bfd6ac640e3ebfe042fd0176d714dbc55709b0b6b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.95,
+        2.396,
+        2.477
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--khan",
+      "sha256": "bd9325a60d720a78060c7104ebd2cf00deec81cc093cf0b6706b12dfa2dd0736",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.947,
+        2.13,
+        2.436
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--ngoc",
+      "sha256": "e3b32dec15be1fd9fa6db62ed463f6c3c65cbb77d85da7d8d1d74655edf9e490",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.227,
+        2.805,
+        2.655
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--non",
+      "sha256": "36034b4b484d287dbe56133ffb1f0ebce813e1bdaeb0838b960cc8c8574a5963",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.977,
+        2.071,
+        2.299
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--tui",
+      "sha256": "984871a6a037bfdd4ddc3563a0ce7c56a5cf6c1f3cecb792aea7d89d027f61fc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.461,
+        1.989,
+        2.426
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--khan-ngoc",
+      "sha256": "f71f5d45c6e9db89ec464e2f2e0f40bef4b6d07a258d3ba5de7ad31c5a21988d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.297,
+        2.603,
+        2.756
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--khan-non",
+      "sha256": "82a2f8e0a4a60836c85f4e8baadeb6a14393d37d8f12b8284dc0d2203dc812fd",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.227,
+        2.074,
+        2.153
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--khan",
+      "sha256": "4d9339ec34986b039f217a3c23406ccade8efeb0675dbf845aea4cd625f460d5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.042,
+        2.348,
+        2.412
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--ngoc",
+      "sha256": "c27158fd2ea37ac186b02081110c2f5a7c3c44a11f772b15bd781512b5ccd326",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.04,
+        1.877,
+        2.539
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--non",
+      "sha256": "dc0a502a09458248d1ade22c385ba687e7caaefa56f30c223a4af9cb829847f4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.939,
+        2.058,
+        2.612
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--tui",
+      "sha256": "6d428179e44c7196490fc41f1b5fa223db2d6db81205681a54a2c34cda42744f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.962,
+        1.695,
+        2.678
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--khan-ngoc",
+      "sha256": "8a87bcce75bdecad826cba344a603be8822620c9ed48480e920a962f52e0c81b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.02,
+        3.145,
+        3.944
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--khan",
+      "sha256": "77833f6ae901fd9462ffbc8027e6c7c047ba6ba609e2ca09bd40aa9e36f4c935",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.992,
+        2.566,
+        2.466
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--ngoc",
+      "sha256": "7937ced4a831ae3c2a76e3affc4721a5a40a610d5b594596c19a733d53af8c3e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.953,
+        2.042,
+        2.206
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--non",
+      "sha256": "e0473c8a9b06546f3ba5c2f55a88b1180deb7b772fe866759492ba12573916d5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        3.649,
+        2.745,
+        2.744
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--tui",
+      "sha256": "9071da3bc5f225037c69c43bf8d954305483e2011b1df4018cb8c69c3eef8cbf",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.888,
+        2.115,
+        2.546
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--khan-ngoc",
+      "sha256": "3b5a09e92f22b8615326a3784371b6c8d9de34a58f3a94dc1ad2c00307f37cde",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.349,
+        2.768,
+        2.406
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--khan-non",
+      "sha256": "684bb79c2ab2e0ae3c960a3dc23b7c074e1ae932f22529f0e30cfa1a2a216a11",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.339,
+        2.911,
+        2.717
+      ]
+    }
+  ]
+}

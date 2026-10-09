@@ -1,0 +1,158 @@
+[
+  {
+    "width": 1440,
+    "style": "minimal",
+    "source": "assets/optimized/ao-dai-ivory.webp",
+    "alt": "Áo dài màu ngà — ảnh minh họa trang phục"
+  },
+  {
+    "width": 1440,
+    "style": "genz",
+    "source": "assets/optimized/styles/genz/ao-dai-ivory.webp",
+    "alt": "Áo dài màu ngà, có Kính râm — ảnh minh họa trang phục"
+  },
+  {
+    "width": 1440,
+    "style": "classic",
+    "source": "assets/optimized/styles/classic/ao-dai-ivory.webp",
+    "alt": "Áo dài màu ngà, có Vòng cổ ngọc trai — ảnh minh họa trang phục"
+  },
+  {
+    "width": 1440,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "ivory",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu ngà, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-ivory--khan-ngoc.webp"
+  },
+  {
+    "width": 1440,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "red",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu đỏ son, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-red--khan-ngoc.webp"
+  },
+  {
+    "width": 1440,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "teal",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu xanh ngọc, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-teal--khan-ngoc.webp"
+  },
+  {
+    "width": 1440,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "pink",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu hồng sen, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-pink--khan-ngoc.webp"
+  },
+  {
+    "width": 1440,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "black",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu đen lĩnh, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-black--khan-ngoc.webp"
+  },
+  {
+    "width": 390,
+    "style": "minimal",
+    "source": "assets/optimized/ao-dai-ivory.webp",
+    "alt": "Áo dài màu ngà — ảnh minh họa trang phục"
+  },
+  {
+    "width": 390,
+    "style": "genz",
+    "source": "assets/optimized/styles/genz/ao-dai-ivory.webp",
+    "alt": "Áo dài màu ngà, có Kính râm — ảnh minh họa trang phục"
+  },
+  {
+    "width": 390,
+    "style": "classic",
+    "source": "assets/optimized/styles/classic/ao-dai-ivory.webp",
+    "alt": "Áo dài màu ngà, có Vòng cổ ngọc trai — ảnh minh họa trang phục"
+  },
+  {
+    "width": 390,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "ivory",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu ngà, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-ivory--khan-ngoc.webp"
+  },
+  {
+    "width": 390,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "red",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu đỏ son, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-red--khan-ngoc.webp"
+  },
+  {
+    "width": 390,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "teal",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu xanh ngọc, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-teal--khan-ngoc.webp"
+  },
+  {
+    "width": 390,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "pink",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu hồng sen, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-pink--khan-ngoc.webp"
+  },
+  {
+    "width": 390,
+    "style": "classic",
+    "garment": "ngu-than",
+    "color": "black",
+    "accessories": [
+      "ngoc",
+      "khan"
+    ],
+    "alt": "Áo ngũ thân màu đen lĩnh, có Khăn vấn, Khuyên ngọc, Vòng cổ ngọc trai — ảnh minh họa trang phục",
+    "source": "assets/optimized/styles/classic/ngu-than-black--khan-ngoc.webp"
+  }
+]

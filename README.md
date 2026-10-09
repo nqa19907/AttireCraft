@@ -53,6 +53,7 @@ Tham khảo [cấu hình build của Vercel](https://vercel.com/docs/builds/conf
 - Chọn sự kiện, thời tiết, bảng màu, phong cách và tối đa 2 phụ kiện.
 - Bản phối minh họa cập nhật tức thì theo lựa chọn.
 - Có 200 biến thể phụ kiện dựng sẵn từ 20 ảnh trang phục gốc: 4 kiểu áo × 5 màu × 10 cách chọn một hoặc hai phụ kiện.
+- “Thêm chút cá tính” chọn ảnh theo phong cách: Gen Z thêm kính râm, Cổ điển thêm một vòng cổ ngọc trai, Tối giản giữ bộ ảnh cũ. Danh mục cần 200 tổ hợp phụ kiện và 20 ảnh chưa chọn phụ kiện cho mỗi phong cách mới; phụ kiện theo phong cách không chiếm hai ô phụ kiện tự chọn.
 - Chấm điểm hài hòa và đưa ra lưu ý theo bối cảnh vùng miền, văn hóa.
 - Lưu tối đa 12 bản phối vào lookbook bằng `localStorage`.
 - So sánh hai phương án, chia sẻ liên kết và tải ảnh PNG của bản phối hoặc lookbook.
@@ -68,6 +69,7 @@ frontend/
 ├── index.html
 ├── styles.css
 ├── image-variants.js           # Danh sách biến thể phụ kiện
+├── style-image-variants.js     # Danh sách ảnh Gen Z và Cổ điển đã có
 ├── core.js                     # Quy tắc dữ liệu và phối đồ
 ├── stories.js                  # Nội dung và nguồn tham khảo
 ├── download.js                 # Xuất ảnh PNG/lookbook
@@ -82,9 +84,17 @@ Sau khi thêm hoặc cập nhật ảnh nguồn, dùng các script trong `script
 .venv/Scripts/python.exe scripts/optimize-accessories.py
 .venv/Scripts/python.exe scripts/build-accessory-gallery.py
 .venv/Scripts/python.exe scripts/check-accessory-art.py
+.venv/Scripts/python.exe scripts/style_catalog.py
+.venv/Scripts/python.exe scripts/optimize-styles.py
+.venv/Scripts/python.exe scripts/build-style-gallery.py
+.venv/Scripts/python.exe scripts/check-style-art.py
 ```
 
 Các script chỉ xử lý ảnh có sẵn trên máy. Danh mục biến thể nằm trong `scripts/accessory_catalog.py`; trang đối chiếu và báo cáo kiểm tra nằm trong `artifacts/accessory-review/`.
+
+Ảnh phong cách được sửa riêng bằng công cụ ImageGen tích hợp, giữ trang phục và các phụ kiện của ảnh nguồn. PNG nằm trong `frontend/assets/outfits/styles/{genz,classic}/`; WebP và thumbnail nằm trong `frontend/assets/optimized/styles/`. Danh mục 440 ảnh và bộ prompt ở `scripts/style_catalog.py` và `artifacts/style-review/generation-jobs.json`; trang đối chiếu, ảnh chụp giao diện và báo cáo kiểm tra ở `artifacts/style-review/`. Script tối ưu chỉ công bố ảnh đã có đủ bản WebP và thumbnail; khi chưa có ảnh phong cách, giao diện dùng ảnh cũ tương ứng.
+
+Trạng thái ngày 6/10/2026: đã công bố 352/440 ảnh (202 Gen Z, 150 Cổ điển), còn 88 ảnh chờ hạn mức ImageGen. Tổ hợp áo ngũ thân + Cổ điển + khuyên ngọc + khăn vấn đã đủ cả năm màu. Danh sách tiếp tục tạo nằm trong `artifacts/style-review/pending-jobs.json`. Kiểm tra `check-style-art.py` trả mã lỗi khi danh mục chưa đủ; các kiểm thử giao diện xác nhận ảnh đã công bố và việc dùng ảnh cũ cho tổ hợp còn thiếu.
 
 ## Kiểm tra
 

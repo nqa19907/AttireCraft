@@ -60,7 +60,7 @@ test('all supported choices produce bounded scores, descriptions and safe local 
               assert.ok(Core.scoreReasons(config).length > 10);
               assert.ok(Core.stylingTip(config).length > 10);
               assert.ok(Core.weatherTip(config).length > 10);
-              assert.match(Core.imagePath(config), /^assets\/optimized\/(?:accessories\/)?[a-z-]+\.webp$/);
+              assert.match(Core.imagePath(config), /^assets\/optimized\/(?:(?:accessories|styles\/(?:genz|classic))\/)?[a-z-]+\.webp$/);
               visited++;
             }
           }
@@ -91,6 +91,78 @@ test('every outfit and accessory combination has matching full, original and thu
   }
   assert.throws(() => Core.imagePath({ garment: '../escape', color: 'ivory' }), TypeError);
   assert.throws(() => Core.imagePath(base({ accessories: ['../escape'] })), TypeError);
+  assert.throws(() => Core.imagePath(base({ style: '../escape' })), TypeError);
+});
+
+test('published personality images resolve correctly and pending variants use matching existing photos', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const variants = require('../frontend/style-image-variants.js');
+  const published = new Set(variants);
+  assert.equal(published.size, variants.length, 'No duplicate published variants');
+  const expected = new Set();
+  let available = 0;
+  const keys = Object.keys(Core.DATA.accessories).sort();
+  const combinations = [[], ...keys.map(key => [key])];
+  for (let i = 0; i < keys.length; i++) for (let j = i + 1; j < keys.length; j++) combinations.push([keys[i], keys[j]]);
+  for (const garment of Object.keys(Core.DATA.garments)) for (const color of Object.keys(Core.DATA.colors)) for (const accessories of combinations) {
+    const minimal = base({ garment, color, accessories });
+    for (const style of ['genz', 'classic']) {
+      const config = { ...minimal, style };
+      const stem = `${garment}-${color}${accessories.length ? '--' + accessories.join('-') : ''}`;
+      const registryKey = `${style}/${stem}`;
+      expected.add(registryKey);
+      const source = Core.imagePath(config);
+      if (published.has(registryKey)) {
+        available++;
+        assert.ok(source.includes(`/styles/${style}/`));
+        assert.notEqual(source, Core.imagePath(minimal));
+        assert.ok(Core.imageDescription(config).includes(Core.DATA.styleAccessories[style]));
+      } else {
+        assert.equal(source, Core.imagePath(minimal), `Pending ${registryKey} keeps its selected accessories`);
+        assert.ok(!Core.imageDescription(config).includes(Core.DATA.styleAccessories[style]));
+      }
+      assert.equal(Core.imagePath({ ...config, accessories: [...accessories].reverse() }), source);
+      for (const image of [source, Core.imagePath(config, true), Core.imagePath(config, false, true)]) {
+        assert.ok(fs.existsSync(path.resolve(__dirname, '../frontend', image)), `Missing ${image}`);
+      }
+      assert.equal(config.accessories.length, accessories.length, 'Style accents do not consume accessory slots');
+    }
+    assert.ok(!Core.imagePath(minimal).includes('/styles/'));
+  }
+  assert.equal(expected.size, 440, 'Each style needs 200 accessory variants and 20 base outfits');
+  assert.equal(available, variants.length, 'Every published variant belongs to the expected catalog');
+});
+
+test('classic ngu than with jade earrings and headscarf has style photos in all five colors', () => {
+  for (const color of Object.keys(Core.DATA.colors)) {
+    const config = base({ garment: 'ngu-than', color, style: 'classic', accessories: ['ngoc', 'khan'] });
+    assert.equal(Core.imagePath(config), `assets/optimized/styles/classic/ngu-than-${color}--khan-ngoc.webp`);
+    assert.ok(Core.imageDescription(config).includes('Vòng cổ ngọc trai'));
+  }
+});
+
+test('style labels include automatic accents without changing selected accessories', () => {
+  const config = base({ garment: 'ngu-than', style: 'classic', accessories: ['ngoc', 'tui'] });
+  assert.deepEqual(Core.accessoryLabels(config), ['Khuyên ngọc', 'Túi lụa', 'Vòng cổ ngọc trai']);
+  assert.deepEqual(config.accessories, ['ngoc', 'tui']);
+  assert.deepEqual(Core.accessoryLabels(base({ style: 'genz' })), ['Kính râm']);
+  assert.deepEqual(Core.accessoryLabels(base()), []);
+});
+
+test('missing style artwork falls back to the matching existing photo', () => {
+  const fs = require('node:fs');
+  const vm = require('node:vm');
+  const sandbox = { AttireImageVariants: require('../frontend/image-variants.js'), AttireStyleImageVariants: [] };
+  vm.runInNewContext(fs.readFileSync(require.resolve('../frontend/core.js'), 'utf8'), sandbox);
+  for (const accessories of [[], ['non'], ['khan', 'tui']]) {
+    for (const style of ['genz', 'classic']) {
+      const config = base({ style, accessories });
+      assert.equal(sandbox.AttireCore.imagePath(config), sandbox.AttireCore.imagePath({ ...config, style: 'minimal' }));
+      assert.ok(!sandbox.AttireCore.imageDescription(config).includes(Core.DATA.styleAccessories[style]));
+      assert.ok(!sandbox.AttireCore.accessoryLabels(config).includes(Core.DATA.styleAccessories[style]));
+    }
+  }
 });
 
 test('saved snapshots derive trusted name and score from configuration', () => {

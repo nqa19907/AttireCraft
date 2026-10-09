@@ -189,8 +189,7 @@
     const image = $('#model-image');
     if (!image) return;
     const source = Core.imagePath(state);
-    const items = state.accessories.map(key => DATA.accessories[key]).join(', ');
-    const description = `${DATA.garments[state.garment].label} màu ${DATA.colors[state.color].label.toLowerCase()}${source.includes('/accessories/') ? `, có ${items}` : ''} — ảnh minh họa trang phục`;
+    const description = Core.imageDescription(state);
     if (image.dataset.source === source) { image.alt = description; return; }
     image.dataset.source = source;
     image.alt = description;
@@ -220,7 +219,7 @@
   function createImage(look, thumbnail = true) {
     const image = element('img');
     image.src = Core.imagePath(look, thumbnail);
-    image.alt = `${DATA.garments[look.garment].label} màu ${DATA.colors[look.color].label.toLowerCase()}${image.getAttribute('src').includes('/accessories/') ? `, có ${look.accessories.map(key => DATA.accessories[key]).join(', ')}` : ''}`;
+    image.alt = Core.imageDescription(look);
     image.loading = 'lazy';
     image.decoding = 'async';
     image.width = 512;
@@ -258,7 +257,7 @@
     setText('#culture-copy', status.text);
     setText('#styling-tip', Core.stylingTip(state));
     setText('#weather-tip', Core.weatherTip(state));
-    const names = state.accessories.map((key) => DATA.accessories[key]);
+    const names = Core.accessoryLabels(state);
     const badge = $('#accessory-badge');
     if (badge) { badge.hidden = !names.length; badge.textContent = names.length ? `Gợi ý: ${names.join(' · ')}` : ''; }
     setText('#preview-index', String(Object.keys(DATA.garments).indexOf(state.garment) + 1).padStart(2, '0'));
@@ -293,7 +292,7 @@
       const meta = element('div', 'saved-meta');
       meta.append(element('small', '', `${DATA.garments[look.garment].label.toUpperCase()} · ${look.score}/100`), element('strong', '', look.name));
       meta.append(element('p', '', `${DATA.occasions[look.occasion].label} · ${DATA.weather[look.weather]} · ${DATA.styles[look.style]}`));
-      meta.append(element('p', 'saved-accessories', look.accessories.length ? look.accessories.map((key) => DATA.accessories[key]).join(' · ') : 'Không thêm phụ kiện'));
+      meta.append(element('p', 'saved-accessories', Core.accessoryLabels(look).join(' · ') || 'Không thêm phụ kiện'));
       const actions = element('div', 'saved-actions');
       const edit = button('saved-edit', 'Mở bản phối ↗');
       edit.dataset.id = look.id;
@@ -374,7 +373,7 @@
       card.append(wrapper, element('strong', '', look.name));
       card.append(element('p', '', `${DATA.garments[look.garment].label} · ${DATA.colors[look.color].label} · ${DATA.styles[look.style]}`));
       card.append(element('p', '', `${DATA.occasions[look.occasion].label} · ${DATA.weather[look.weather]}`));
-      card.append(element('p', 'compare-accessories', look.accessories.length ? look.accessories.map((key) => DATA.accessories[key]).join(' · ') : 'Không thêm phụ kiện'));
+      card.append(element('p', 'compare-accessories', Core.accessoryLabels(look).join(' · ') || 'Không thêm phụ kiện'));
       card.append(element('b', 'compare-score', `Gợi ý hài hòa: ${look.score}/100`));
     }
     if (!current) card.append(button('compare-baseline-button', look ? 'Dùng hiện tại làm mốc A' : 'Chọn hiện tại làm mốc A', 'set-baseline'));

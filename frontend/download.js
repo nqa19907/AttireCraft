@@ -71,7 +71,7 @@
       context.font = '17px Arial, sans-serif';
       context.fillText(`${Core.DATA.garments[look.garment].label} · ${Core.DATA.colors[look.color].label}`, x + 20, y + imageHeight + 78);
       context.font = '15px Arial, sans-serif';
-      const details = `${Core.DATA.occasions[look.occasion].label} · ${look.accessories.length ? look.accessories.map(key => Core.DATA.accessories[key]).join(' · ') : 'Không thêm phụ kiện'}`;
+      const details = `${Core.DATA.occasions[look.occasion].label} · ${Core.accessoryLabels(look).join(' · ') || 'Không thêm phụ kiện'}`;
       wrap(context, details, x + 20, y + imageHeight + 106, width - 40, 23);
     });
     return blobFrom(canvas);

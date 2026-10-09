@@ -1,100 +1,11 @@
 {
-  "checked": 352,
+  "checked": 440,
   "expected": 440,
   "by_style": {
-    "genz": 202,
-    "classic": 150
+    "genz": 220,
+    "classic": 220
   },
-  "missing": [
-    "genz/ao-dai-pink--non",
-    "genz/ao-dai-pink--tui",
-    "genz/ao-dai-pink--khan-ngoc",
-    "genz/ao-dai-pink--khan-non",
-    "genz/ao-dai-pink--khan-tui",
-    "genz/ao-dai-pink--ngoc-non",
-    "genz/ao-dai-pink--ngoc-tui",
-    "genz/ao-dai-pink--non-tui",
-    "genz/ao-dai-black--khan",
-    "genz/ao-dai-black--ngoc",
-    "genz/ao-dai-black--non",
-    "genz/ao-dai-black--tui",
-    "genz/ao-dai-black--khan-ngoc",
-    "genz/ao-dai-black--khan-non",
-    "genz/ao-dai-black--khan-tui",
-    "genz/ao-dai-black--ngoc-non",
-    "genz/ao-dai-black--ngoc-tui",
-    "genz/ao-dai-black--non-tui",
-    "classic/ao-dai-ivory--khan",
-    "classic/ao-dai-ivory--ngoc",
-    "classic/ao-dai-ivory--non",
-    "classic/ao-dai-ivory--tui",
-    "classic/ao-dai-ivory--khan-ngoc",
-    "classic/ao-dai-ivory--khan-non",
-    "classic/ao-dai-ivory--khan-tui",
-    "classic/ao-dai-ivory--ngoc-non",
-    "classic/ao-dai-ivory--ngoc-tui",
-    "classic/ao-dai-ivory--non-tui",
-    "classic/ao-dai-red--khan",
-    "classic/ao-dai-red--ngoc",
-    "classic/ao-dai-red--non",
-    "classic/ao-dai-red--tui",
-    "classic/ao-dai-red--khan-ngoc",
-    "classic/ao-dai-red--khan-non",
-    "classic/ao-dai-red--khan-tui",
-    "classic/ao-dai-red--ngoc-non",
-    "classic/ao-dai-red--ngoc-tui",
-    "classic/ao-dai-red--non-tui",
-    "classic/ao-dai-teal--khan",
-    "classic/ao-dai-teal--ngoc",
-    "classic/ao-dai-teal--non",
-    "classic/ao-dai-teal--tui",
-    "classic/ao-dai-teal--khan-ngoc",
-    "classic/ao-dai-teal--khan-non",
-    "classic/ao-dai-teal--khan-tui",
-    "classic/ao-dai-teal--ngoc-non",
-    "classic/ao-dai-teal--ngoc-tui",
-    "classic/ao-dai-teal--non-tui",
-    "classic/ao-dai-pink--khan",
-    "classic/ao-dai-pink--ngoc",
-    "classic/ao-dai-pink--non",
-    "classic/ao-dai-pink--tui",
-    "classic/ao-dai-pink--khan-ngoc",
-    "classic/ao-dai-pink--khan-non",
-    "classic/ao-dai-pink--khan-tui",
-    "classic/ao-dai-pink--ngoc-non",
-    "classic/ao-dai-pink--ngoc-tui",
-    "classic/ao-dai-pink--non-tui",
-    "classic/ao-dai-black--khan",
-    "classic/ao-dai-black--ngoc",
-    "classic/ao-dai-black--non",
-    "classic/ao-dai-black--tui",
-    "classic/ao-dai-black--khan-ngoc",
-    "classic/ao-dai-black--khan-non",
-    "classic/ao-dai-black--khan-tui",
-    "classic/ao-dai-black--ngoc-non",
-    "classic/ao-dai-black--ngoc-tui",
-    "classic/ao-dai-black--non-tui",
-    "classic/ba-ba-ivory--ngoc-tui",
-    "classic/ba-ba-ivory--non-tui",
-    "classic/ba-ba-red--khan-non",
-    "classic/ba-ba-red--khan-tui",
-    "classic/ba-ba-red--ngoc-non",
-    "classic/ba-ba-red--ngoc-tui",
-    "classic/ba-ba-red--non-tui",
-    "classic/ba-ba-teal--khan-tui",
-    "classic/ba-ba-teal--ngoc-non",
-    "classic/ba-ba-teal--ngoc-tui",
-    "classic/ba-ba-teal--non-tui",
-    "classic/ba-ba-pink--khan-non",
-    "classic/ba-ba-pink--khan-tui",
-    "classic/ba-ba-pink--ngoc-non",
-    "classic/ba-ba-pink--ngoc-tui",
-    "classic/ba-ba-pink--non-tui",
-    "classic/ba-ba-black--khan-tui",
-    "classic/ba-ba-black--ngoc-non",
-    "classic/ba-ba-black--ngoc-tui",
-    "classic/ba-ba-black--non-tui"
-  ],
+  "missing": [],
   "failures": [],
   "background_review": [],
   "images": [
@@ -772,6 +683,240 @@
         2.103,
         1.742,
         2.953
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--non",
+      "sha256": "974319e11b474c1e2ff1d9de45bb26b4e1cbbb9159b17864511a0a1cb0fd9c60",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.585,
+        2.341,
+        3.201
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--tui",
+      "sha256": "1c7ef706c9582f06c8f30c8f9355cacc0f1fa99990e08f74432e9ea8d92e04e4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.697,
+        2.781,
+        3.212
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--khan-ngoc",
+      "sha256": "393e80e2470cfc8a4f8921ecb91cb3eb46b9e013b0b2c06fd8ade256f096ed3d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.042,
+        1.769,
+        3.855
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--khan-non",
+      "sha256": "7f0c7a9c495b1c06381b273afee21714278626f5e955d3e1caac445a58d5063d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.983,
+        1.939,
+        3.136
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--khan-tui",
+      "sha256": "53bfe81f52f140d4ffb1083cfcfc5a93d96a671fabc7bcbeb1e0f7213110531d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.645,
+        2.158,
+        2.996
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--ngoc-non",
+      "sha256": "769fd394780c1712b8608f012434471d582f7c47d2253a70f2f5f86061062c9b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.531,
+        2.8,
+        4.218
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--ngoc-tui",
+      "sha256": "463ea4d34c7f2bf761d843d3bc8a0d64a9fa7e6193d73d5209caf4550918c0b2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.967,
+        1.701,
+        3.062
+      ]
+    },
+    {
+      "key": "genz/ao-dai-pink--non-tui",
+      "sha256": "ce7d15d2d117650844a7df3f10dd35cb7c00dba5607f9be1578916f9b87ae574",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.456,
+        2.421,
+        2.967
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--khan",
+      "sha256": "cf10fd62976f37a2f6999a6dbef4aa8cdc2fff795d4b95eb4952f55a81809f71",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.813,
+        1.744,
+        4.184
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--ngoc",
+      "sha256": "d4f6be41360722690529078d359b7c068506c284227e9b74e364e4a7e0220b11",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.042,
+        1.888,
+        2.95
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--non",
+      "sha256": "1682dc263316bdd63787d5a1f003d2de429179cfdf71117705808c8da5f8476a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.301,
+        1.988,
+        3.086
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--tui",
+      "sha256": "e7dd1df5b735f9c1850d014774e82de733a1cb583c0f59515d6e2d6346eb2e23",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.848,
+        2.211,
+        3.84
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--khan-ngoc",
+      "sha256": "bbdec7cac1af90140a158e6d1f6e8dab3b5e5ae0247203cc6c5111c3269c26aa",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.1,
+        2.092,
+        3.011
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--khan-non",
+      "sha256": "e8d2cea9b91544976b361aa26d4c7b38c5a73efffb1fad8b2a830940eb196722",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.084,
+        1.932,
+        3.043
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--khan-tui",
+      "sha256": "c9b4884d007cf2561c2d6405ce74e2ea20cf5a487ae4e6b4cb0af7bf1ec45bb3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.876,
+        1.569,
+        2.984
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--ngoc-non",
+      "sha256": "c4be745128c94844f4ef20345e02a6ac1caae0ff89c07a1440baede6b16f5428",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.06,
+        1.92,
+        3.226
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--ngoc-tui",
+      "sha256": "6bba180e0994be2ebe49fd7b08c7e5aee1743b697c1be0a8a9796aae7cc0e471",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.212,
+        2.417,
+        3.766
+      ]
+    },
+    {
+      "key": "genz/ao-dai-black--non-tui",
+      "sha256": "182512f8bc9a30de4ab9e78fb64131e22306e7b3998c15aa4f6e6417fa5167da",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.433,
+        2.886,
+        3.829
       ]
     },
     {
@@ -2985,6 +3130,656 @@
       ]
     },
     {
+      "key": "classic/ao-dai-ivory--khan",
+      "sha256": "32dfb9693fc411843bf605e6f28973960e371725211535bf91400e5d54daedc3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.777,
+        2.03,
+        3.509
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--ngoc",
+      "sha256": "67c837f9b6e4ad6ed7455b0e97598b4167194390a21274f1ef89ce1e6599f3fc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.777,
+        2.898,
+        3.652
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--non",
+      "sha256": "58bdefcaf6f0dd1654785aef86a255012615f38f7c86e830fe8ba1abbea9dde9",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.623,
+        2.385,
+        3.782
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--tui",
+      "sha256": "f1b7bb500246666227d3936338b13a9cf35081feab81d9f11d72bd2840cf8c89",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.946,
+        1.847,
+        3.409
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--khan-ngoc",
+      "sha256": "4e5a29255b1557ba6d64dc327c3cb7d0bbb300c4dbc2d40fdd03cd7524527454",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.875,
+        1.907,
+        3.434
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--khan-non",
+      "sha256": "6bf2f2c8c37af2a410f0ecb3f361f22bec92f772187be5f7f3bed09b86dc1072",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.684,
+        1.851,
+        3.392
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--khan-tui",
+      "sha256": "814a03633fae9629ad52b2ad5c0cb547f4d2211877ab3c19e4e4b9b18a265524",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.959,
+        3.266,
+        3.779
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--ngoc-non",
+      "sha256": "1ad41790c7168bb05c12d2249a3a82beba0e00ab270c9af9b794a34ad1eec77e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.455,
+        2.055,
+        3.821
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--ngoc-tui",
+      "sha256": "c6efe06e149fce6017c1aeaa930a5685cdaf70f503b8e724ee6918ab90687184",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.722,
+        2.687,
+        3.514
+      ]
+    },
+    {
+      "key": "classic/ao-dai-ivory--non-tui",
+      "sha256": "7db8f1b4e5a9048083132480646429c2da38424fe15cb8807bca080df3651f39",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.857,
+        2.041,
+        3.417
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--khan",
+      "sha256": "8ec49d2940478ebef1bc0c014bcd5017a899f886915e1ab434324fbd2be283c5",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.487,
+        1.661,
+        2.901
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--ngoc",
+      "sha256": "0254291a878eee8f172776c4051157e7657c80c04d90523054291e9a66fe9757",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.344,
+        1.515,
+        2.977
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--non",
+      "sha256": "3300873cc133280e6f83784d298ebf2949ec631a3d7ce11c7467fdba247e8899",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.975,
+        1.789,
+        3.065
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--tui",
+      "sha256": "c794efcf7def4e82b509c4a646b45c0a7590fe09fb3b843b8bab60c5ac13ae13",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.012,
+        1.439,
+        2.995
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--khan-ngoc",
+      "sha256": "7ef58ca76ffa30a80e3e647fbdd8cb03015d9d43252bf2ba146b266565d08984",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.808,
+        1.604,
+        2.882
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--khan-non",
+      "sha256": "551b568cf432278c7510b547f92196c367be22c4a70884c1a452ac0c5c613ea2",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.68,
+        1.492,
+        3.11
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--khan-tui",
+      "sha256": "005b70c249c10c45c81f3b38a6c29385d746d0b7aed8726da151d6e427fa8b50",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.889,
+        1.642,
+        2.894
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--ngoc-non",
+      "sha256": "89ad1c53be165c0fba30e42e5731bced4671d5ece472d370e1735107a80893f3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.09,
+        2.245,
+        3.394
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--ngoc-tui",
+      "sha256": "581d004ae58e4295b533e8c469b6d3092bcfb36494b75c3a66d9597b404fc426",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.838,
+        1.581,
+        3.238
+      ]
+    },
+    {
+      "key": "classic/ao-dai-red--non-tui",
+      "sha256": "1cb3245f6febbafc14fe9292ccc3bc16c9ba3707a57f1c4645963f193ba1bbc8",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.693,
+        1.493,
+        3.286
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--khan",
+      "sha256": "a51d48ebc8ed92dfaffb973c2332ef4fd9a645b87d81313cedeb5d9b17ed5c22",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.659,
+        1.948,
+        3.068
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--ngoc",
+      "sha256": "93764fe777b40477fa10e40456304dd9a864dc70e6d6fb8db85febf3ed388a3e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.835,
+        1.891,
+        3.233
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--non",
+      "sha256": "7d858e72a12781c223f65872d36c94f812dd378f6eeb6c64b2c501e0f2337606",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.869,
+        1.78,
+        3.14
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--tui",
+      "sha256": "0f89493ef79c01ab02d28ea00c3e87d1c89a32de8fc1ea6f48bafc99a11ee20b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.226,
+        2.32,
+        3.502
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--khan-ngoc",
+      "sha256": "8a3aec7b8f1b4c1fe86f855875776f48d03cc3eb84884aa32ee2979d2a593be0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.64,
+        2.492,
+        3.654
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--khan-non",
+      "sha256": "4aa16da138c5b54eac1fa08ead43f93e8c5428cd98b774f6e184b9694f7cca41",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.859,
+        2.058,
+        3.168
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--khan-tui",
+      "sha256": "daf4040edafcd36cf6d058c7d7e07994fb828a1069e893df6aab6e2f5907da5d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.802,
+        1.791,
+        3.311
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--ngoc-non",
+      "sha256": "836330eb420522d5134e58f95419539ea8b14ee7f75ce7de1adadf0a45bf688d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.02,
+        2.022,
+        3.143
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--ngoc-tui",
+      "sha256": "c8add7bb27ba08f80044eab8e84d573bf58c3010bd0410db958fc2f8dcac9d28",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.976,
+        2.478,
+        3.224
+      ]
+    },
+    {
+      "key": "classic/ao-dai-teal--non-tui",
+      "sha256": "1b42b6b33b10b2aed9dd447693127c2c92a4c829b01316c65a1e11f54383222b",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.901,
+        1.719,
+        2.896
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--khan",
+      "sha256": "bb1cd32e6115f08d55ab2d92e85251b7960b142c990f3bb8e6e6b9bae6adcb67",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.535,
+        2.232,
+        2.976
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--ngoc",
+      "sha256": "9659314de1c8f10bac229a49e5f0d5caecb4be9537119f8e36a8f74969c61367",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.611,
+        1.981,
+        3.031
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--non",
+      "sha256": "2862c5c2799487f247a3dac62491b2b75e821aea58779f501eec2ffb56d73ef4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.497,
+        2.31,
+        3.345
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--tui",
+      "sha256": "efa06fdaa7d4dea7922a0842ef9cd8b1613e10ebe344b6d5554d95b5aec68bdc",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.693,
+        2.47,
+        3.155
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--khan-ngoc",
+      "sha256": "38de47643e65a1b366b5a921b936fe69bebe2b9e8136c4e49990c2f3a598d703",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.677,
+        1.635,
+        3.303
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--khan-non",
+      "sha256": "fafe5ae292fbd8f3068e52f7902010a6a34e349e0f1563cc6af768b9d2e50499",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.414,
+        1.891,
+        3.241
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--khan-tui",
+      "sha256": "3e646d1184a5569d387162bc6a8d510e55ed5a4764d34875250b2cd75f821142",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.506,
+        1.979,
+        3.265
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--ngoc-non",
+      "sha256": "c9cc7d0783aebc1b076ab0f0d576c2216859b39f8aff1a58169db45ce6d61beb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.601,
+        1.659,
+        3.107
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--ngoc-tui",
+      "sha256": "40998224e2dc2f6463ba914a57f8d998c8da392a95789d200ed2fd38988e4b0c",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.719,
+        1.726,
+        3.165
+      ]
+    },
+    {
+      "key": "classic/ao-dai-pink--non-tui",
+      "sha256": "ac70cf203ce3959ec6f879f7fe635f2300c0529009c7a8d051478947ea7c3593",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.614,
+        1.797,
+        2.993
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--khan",
+      "sha256": "f03ff823082cf30e6e980c3b1e04f6ce5edea8cce39c78d99ac32e137053bf47",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.719,
+        1.711,
+        2.968
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--ngoc",
+      "sha256": "2f2916ddae35c8bc4dea19b3dbc8059dcfb7ffb0d940c9e620328d65d003137e",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.868,
+        1.988,
+        3.666
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--non",
+      "sha256": "edbabd1fac7bbab4c3e0ee1e9ea437fb111359ab009590cb09523dd95377908a",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.298,
+        2.587,
+        4.161
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--tui",
+      "sha256": "43718a65930231525c2ba5063da33fd81a38c191c8cfdc1cd6bb906aa73da42f",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.373,
+        1.642,
+        2.861
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--khan-ngoc",
+      "sha256": "5cac7c9e17055d91f635c22648c238868b6f3eca1fc5ff803358bbdaa822e201",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.508,
+        1.774,
+        3.012
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--khan-non",
+      "sha256": "0754cadcb3bfe6b1a7b6dd98de1e62ea507ced7303d48e04c27210d297720d2d",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.885,
+        1.862,
+        2.98
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--khan-tui",
+      "sha256": "7820216b6dc3b3aba9b5fa2630120609ea62573d9da03cc21ce1f05074ccd235",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.755,
+        1.762,
+        3.041
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--ngoc-non",
+      "sha256": "84fb769cbd4de11552e8a451615966efda183de9f44fb2011750aecf3f933c30",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.92,
+        1.598,
+        3.007
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--ngoc-tui",
+      "sha256": "58e4816b2295b40a0ac846848c55774c46135b14df467f83591a1b36c6c2c628",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.658,
+        1.798,
+        2.942
+      ]
+    },
+    {
+      "key": "classic/ao-dai-black--non-tui",
+      "sha256": "2f154b054b30e7950709da6d4d39903c16d848e3c743489a993226361c22f071",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.042,
+        1.748,
+        2.936
+      ]
+    },
+    {
       "key": "classic/tu-than-ivory--khan",
       "sha256": "d00e07d5ad8464b449d314b4d5399423dcc25bbce6cf9acac6d81fbab9930e43",
       "dimensions": [
@@ -4389,6 +5184,32 @@
       ]
     },
     {
+      "key": "classic/ba-ba-ivory--ngoc-tui",
+      "sha256": "3136c511844f085b6722b6e320acf566d3e74ae65225f7d71f172f942cc989b6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.319,
+        2.331,
+        2.41
+      ]
+    },
+    {
+      "key": "classic/ba-ba-ivory--non-tui",
+      "sha256": "01bf8e3910dbf590707a0ba9c30c8f7a13fef4e75252e9e04412bdd62e7eda80",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.938,
+        1.639,
+        2.283
+      ]
+    },
+    {
       "key": "classic/ba-ba-red--khan",
       "sha256": "6afe3151200091cad7033e8b6918fa63a04254e5baddc7fd68a1c4d1c6a88e24",
       "dimensions": [
@@ -4451,6 +5272,71 @@
         1.95,
         2.396,
         2.477
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--khan-non",
+      "sha256": "d24bb58f2552a3ab70fc7bb25dbe2fbb445b466bd280bb48a327debddf851e92",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        4.224,
+        2.837,
+        2.923
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--khan-tui",
+      "sha256": "e67a8d0146936718a19772723aa771a011c734ceefd8e492e836b88f04413e28",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.771,
+        3.048,
+        3.626
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--ngoc-non",
+      "sha256": "50ac1a2cbe28e3571f6d8f90de430cb83be1ad8e9c58c70fea8b9962c90a8b34",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.578,
+        2.669,
+        3.049
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--ngoc-tui",
+      "sha256": "2a8c285f630ccf075ef20f96632ecf9a281001227aa35b78629aedf957728589",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.308,
+        2.885,
+        2.381
+      ]
+    },
+    {
+      "key": "classic/ba-ba-red--non-tui",
+      "sha256": "8a60dc512854f4cefea333554fcb0da02ee19d10e15b5142c9dfb5483e24c933",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.407,
+        2.163,
+        2.404
       ]
     },
     {
@@ -4532,6 +5418,58 @@
       ]
     },
     {
+      "key": "classic/ba-ba-teal--khan-tui",
+      "sha256": "9f780ecf9261e5bf8c614055256edc5c48bcadd360829190bc5204008821f1c3",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.112,
+        1.772,
+        2.742
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--ngoc-non",
+      "sha256": "616c4544942d9364373f16bcb97d5faf315f73d160f74590431115fe80ff8ae1",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.251,
+        2.157,
+        2.407
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--ngoc-tui",
+      "sha256": "9653a2cfcebe832bacbc91b0bb242e9cf61cc2ef891bce51d764d09212b40fff",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.166,
+        2.756,
+        2.391
+      ]
+    },
+    {
+      "key": "classic/ba-ba-teal--non-tui",
+      "sha256": "1c6ea9cd09d87ccf7702d7c51d73afb46b1aeb86d3d61b3f41b2f6b61cea2079",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.423,
+        2.522,
+        2.698
+      ]
+    },
+    {
       "key": "classic/ba-ba-pink--khan",
       "sha256": "4d9339ec34986b039f217a3c23406ccade8efeb0675dbf845aea4cd625f460d5",
       "dimensions": [
@@ -4594,6 +5532,71 @@
         3.02,
         3.145,
         3.944
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--khan-non",
+      "sha256": "e49d85dc7e7758af8201e892b9eb7c88105f43daf0f1ec74b2d2fab38b35fe35",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.89,
+        3.271,
+        3.139
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--khan-tui",
+      "sha256": "935873569b7c859e32648a35572d2baecc059954f0e8cc8c42e2c92846e6e587",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.698,
+        2.511,
+        2.889
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--ngoc-non",
+      "sha256": "5fd1f99b1fce223b4bb937967957f2699538007899ac07a5608b7c4528567068",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        1.995,
+        1.735,
+        2.479
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--ngoc-tui",
+      "sha256": "b32bfdc3f8b734a612ddd44ae00f3e1ebae9dd23ea86f4a75e389909a6f17ac4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.509,
+        3.149,
+        3.197
+      ]
+    },
+    {
+      "key": "classic/ba-ba-pink--non-tui",
+      "sha256": "3eaccdf579649266fccc8466c0500ae85b22bf2959aacfd1dcc9bbe9756f61a4",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.363,
+        2.891,
+        2.797
       ]
     },
     {
@@ -4672,6 +5675,58 @@
         2.339,
         2.911,
         2.717
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--khan-tui",
+      "sha256": "2b8e8b15a3cd3ceac3cfa15a639d9ff3dc773d1b154e07059582f994513d02fe",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.35,
+        2.822,
+        2.745
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--ngoc-non",
+      "sha256": "52f978a748898009b1321b6ede76e89a02d4eafc8ed77ee7986545a1e10414eb",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.061,
+        2.489,
+        2.442
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--ngoc-tui",
+      "sha256": "215e453f0c42cb4ae19c030287a99de8218d11c6a67b51c2ea9dce266b5ecae6",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.32,
+        2.753,
+        2.976
+      ]
+    },
+    {
+      "key": "classic/ba-ba-black--non-tui",
+      "sha256": "9b9ffbbab0f7797f9eeda2a66a2bc08809f90f1584a4443faad9626e253950c0",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "background_difference": [
+        2.467,
+        3.02,
+        3.123
       ]
     }
   ]

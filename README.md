@@ -94,7 +94,7 @@ Các script chỉ xử lý ảnh có sẵn trên máy. Danh mục biến thể n
 
 Ảnh phong cách được sửa riêng bằng công cụ ImageGen tích hợp, giữ trang phục và các phụ kiện của ảnh nguồn. PNG nằm trong `frontend/assets/outfits/styles/{genz,classic}/`; WebP và thumbnail nằm trong `frontend/assets/optimized/styles/`. Danh mục 440 ảnh và bộ prompt ở `scripts/style_catalog.py` và `artifacts/style-review/generation-jobs.json`; trang đối chiếu, ảnh chụp giao diện và báo cáo kiểm tra ở `artifacts/style-review/`. Script tối ưu chỉ công bố ảnh đã có đủ bản WebP và thumbnail; khi chưa có ảnh phong cách, giao diện dùng ảnh cũ tương ứng.
 
-Trạng thái ngày 6/10/2026: đã công bố 352/440 ảnh (202 Gen Z, 150 Cổ điển), còn 88 ảnh chờ hạn mức ImageGen. Tổ hợp áo ngũ thân + Cổ điển + khuyên ngọc + khăn vấn đã đủ cả năm màu. Danh sách tiếp tục tạo nằm trong `artifacts/style-review/pending-jobs.json`. Kiểm tra `check-style-art.py` trả mã lỗi khi danh mục chưa đủ; các kiểm thử giao diện xác nhận ảnh đã công bố và việc dùng ảnh cũ cho tổ hợp còn thiếu.
+Trạng thái ngày 9/10/2026: đã công bố đủ 440/440 ảnh (220 Gen Z, 220 Cổ điển), gồm toàn bộ 400 tổ hợp phụ kiện và 40 ảnh chưa chọn phụ kiện. Đợt bổ sung hoàn tất 88 ảnh còn thiếu bằng ImageGen tích hợp; mỗi ảnh có PNG nguồn, WebP và thumbnail. `artifacts/style-review/pending-jobs.json` hiện rỗng. Kiểm tra `check-style-art.py` xác nhận danh mục đầy đủ, không có ảnh trùng, sai tỷ lệ hoặc nền cần xem xét thêm; các kiểm thử kiểm tra đường dẫn và file ảnh cho mọi tổ hợp.
 
 ## Kiểm tra
 

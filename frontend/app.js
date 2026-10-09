@@ -22,6 +22,11 @@
   let toastTimer;
   let undoAction = null;
   let imageRequest = 0;
+  let finderStep = 0;
+  let finderAnswers = {};
+  let finderResults = [];
+  let finderApplied = false;
+  let scoreUndo = null;
   let suggestionIndex = Math.floor(Math.random() * 100);
   let shareBusy = false;
   let importBusy = false;
@@ -140,6 +145,9 @@
     const config = Core.validateConfig(value);
     if (!config) return;
     state = config;
+    scoreUndo = null;
+    setText('#score-feedback', '');
+    if ($('#score-undo')) $('#score-undo').hidden = true;
     if (options.exitEditing) editingId = null;
     updatePreview();
     persistDraft();
@@ -188,6 +196,8 @@
     setText('.image-caption', 'ẢNH MINH HỌA');
     const image = $('#model-image');
     if (!image) return;
+    // Restored drafts must load even when the browser restores a lower scroll position.
+    image.loading = 'eager';
     const source = Core.imagePath(state);
     const description = Core.imageDescription(state);
     if (image.dataset.source === source) { image.alt = description; return; }
@@ -251,6 +261,7 @@
     }
     setText('#score-title', score >= 92 ? 'Rất hài hòa' : score >= 84 ? 'Có nét riêng' : 'Thử điều chỉnh nhé');
     setText('#score-copy', Core.scoreReasons(state));
+    renderScoreDetails();
     $('#culture-note')?.classList.toggle('warning', status.warning);
     setText('#culture-note .note-icon', status.warning ? 'i' : '✓');
     setText('#culture-note strong', status.warning ? 'Một gợi ý về bối cảnh' : 'Gợi ý giữ nét đặc trưng');
@@ -262,6 +273,123 @@
     if (badge) { badge.hidden = !names.length; badge.textContent = names.length ? `Gợi ý: ${names.join(' · ')}` : ''; }
     setText('#preview-index', String(Object.keys(DATA.garments).indexOf(state.garment) + 1).padStart(2, '0'));
     if ($('#compare-tray') && !$('#compare-tray').hidden) renderCompare();
+  }
+
+  function renderScoreDetails() {
+    const container = $('#score-breakdown');
+    if (!container) return;
+    container.replaceChildren(...Core.scoreBreakdown(state).criteria.map(item => {
+      const row = element('div', 'score-criterion');
+      row.dataset.criterion = item.id;
+      const heading = element('div', 'score-criterion-heading');
+      heading.append(element('strong', '', item.label), element('span', 'criterion-value', item.score + '/' + item.max));
+      const meter = element('meter');
+      meter.min = 0;
+      meter.max = item.max;
+      meter.value = item.score;
+      meter.setAttribute('aria-label', item.label);
+      row.append(heading, meter, element('p', '', item.reason));
+      return row;
+    }));
+    const improvements = Core.scoreImprovements(state);
+    const actions = $('#score-improvements');
+    actions.replaceChildren();
+    setText('#score-actions-title', improvements.length ? 'Một thay đổi nhỏ' : 'Bạn có thể giữ bản phối này');
+    if (!improvements.length) actions.append(element('p', 'score-empty', 'Chưa có thay đổi nào giúp tăng điểm theo các quy tắc hiện tại. Bạn vẫn có thể tự do thử màu, phom và phụ kiện.'));
+    improvements.forEach(item => {
+      const card = element('div', 'score-improvement');
+      const copy = element('div');
+      copy.append(element('strong', '', item.label), element('p', '', item.reason));
+      const apply = button('secondary-button', 'Áp dụng · +' + item.delta + ' điểm');
+      apply.dataset.improvement = item.id;
+      apply.setAttribute('aria-label', item.label + ': từ ' + item.before + ' lên ' + item.after + ' điểm');
+      apply.addEventListener('click', () => {
+        const previous = Core.validateConfig(state);
+        setConfig(item.config);
+        scoreUndo = previous;
+        setText('#score-feedback', 'Đã áp dụng “' + item.label + '”: ' + item.before + ' → ' + item.after + '/100.');
+        $('#score-undo').hidden = false;
+        $('#score-undo').focus({ preventScroll: true });
+      });
+      card.append(copy, apply);
+      actions.append(card);
+    });
+  }
+
+  const FINDER_QUESTIONS = [
+    { key: 'occasion', title: 'Bạn sẽ mặc vào dịp nào?', note: 'Chọn dịp chính để tìm phom áo phù hợp.', options: DATA.occasions },
+    { key: 'weather', title: 'Thời tiết nơi bạn đến thế nào?', note: 'Chọn điều kiện bạn dự kiến gặp khi mặc.', options: DATA.weather },
+    { key: 'style', title: 'Bạn thích phong cách nào?', note: 'Cả ba gợi ý sẽ giữ phong cách bạn chọn.', options: DATA.styles }
+  ];
+  const FINDER_HINTS = {
+    'le-hoi': 'Đi hội, dạo xuân, gặp gỡ', 'ky-yeu': 'Lưu lại một cột mốc', cuoi: 'Một dịp trang trọng', 'hang-ngay': 'Đi học, đi chơi, dạo phố',
+    warm: 'Ưu tiên cảm giác nhẹ, thoáng', cool: 'Có thể phối thêm lớp mỏng', rain: 'Chú ý tà áo khi di chuyển',
+    minimal: 'Tinh gọn, tập trung vào phom áo', genz: 'Kính râm và điểm nhấn cá tính', classic: 'Ngọc trai và nét thanh lịch'
+  };
+
+  function renderFinder(focus = true) {
+    const results = finderStep === FINDER_QUESTIONS.length;
+    $('#finder-form').hidden = results;
+    $('#finder-results').hidden = !results;
+    setText('#finder-progress', results ? 'GỢI Ý CỦA BẠN' : 'CÂU HỎI ' + (finderStep + 1) + ' / 3');
+    if (results) {
+      finderResults = Core.guidedSuggestions(finderAnswers);
+      setText('#finder-summary', DATA.occasions[finderAnswers.occasion].label + ' · ' + DATA.weather[finderAnswers.weather] + ' · ' + DATA.styles[finderAnswers.style]);
+      $('#finder-results-grid').replaceChildren(...finderResults.map((result, index) => {
+        const config = result.config;
+        const card = element('article', 'finder-card');
+        card.append(createImage(config));
+        const content = element('div', 'finder-card-content');
+        content.append(element('small', '', DATA.garments[config.garment].label + ' · ' + result.score + '/100'), element('h4', '', Core.lookName(config)));
+        const reasons = element('ul');
+        result.reasons.forEach(reason => reasons.append(element('li', '', reason)));
+        const choose = button('primary-button', 'Mở trong phòng phối ↗');
+        choose.dataset.finderChoice = String(index);
+        choose.setAttribute('aria-label', 'Mở ' + Core.lookName(config) + ' trong phòng phối');
+        choose.addEventListener('click', () => {
+          finderApplied = true;
+          $('#finder-dialog').close();
+          setConfig(config, { exitEditing: true, scroll: true });
+          showToast('Đã mở “' + Core.lookName(config) + '”. Bạn có thể chỉnh tiếp và lưu vào lookbook.');
+        });
+        content.append(reasons, choose);
+        card.append(content);
+        return card;
+      }));
+      if (focus) $('#finder-results-title').focus();
+    } else {
+      const question = FINDER_QUESTIONS[finderStep];
+      const fieldset = element('fieldset', 'finder-fieldset');
+      const legend = element('legend', '', question.title);
+      legend.id = 'finder-question-title';
+      legend.tabIndex = -1;
+      fieldset.append(legend, element('p', 'finder-question-note', question.note));
+      const options = element('div', 'finder-options');
+      Object.entries(question.options).forEach(([key, value]) => {
+        const label = element('label', 'finder-option');
+        const input = element('input');
+        input.type = 'radio';
+        input.name = 'finder-' + question.key;
+        input.value = key;
+        input.required = true;
+        input.checked = finderAnswers[question.key] === key;
+        input.addEventListener('change', () => {
+          finderAnswers[question.key] = key;
+          $('#finder-next').disabled = false;
+        });
+        const copy = element('span');
+        copy.append(element('strong', '', value.label || value), element('small', '', FINDER_HINTS[key]));
+        label.append(input, copy);
+        options.append(label);
+      });
+      fieldset.append(options);
+      $('#finder-question').replaceChildren(fieldset);
+      $('#finder-back').hidden = finderStep === 0;
+      $('#finder-next').disabled = !finderAnswers[question.key];
+      setText('#finder-next', finderStep === 2 ? 'Xem 3 bản phối →' : 'Tiếp tục →');
+      if (focus) legend.focus();
+    }
+    $('#finder-dialog').scrollTop = 0;
   }
 
   function renderLookbook() {
@@ -425,7 +553,7 @@
     storyTrigger = document.activeElement;
     setText('#dialog-label', story.subtitle);
     setText('#dialog-title', story.title);
-    const image = createImage({ garment: key, color: 'ivory' });
+    const image = createImage({ ...Core.DEFAULT, garment: key });
     image.className = 'story-image';
     const content = document.createDocumentFragment();
     content.append(image, element('p', 'story-intro', story.intro));
@@ -665,6 +793,30 @@
     $('.preview-actions').append(button('secondary-button save-copy-button', 'Lưu thành bản mới', 'save-copy-button'));
     $('#save-copy-button').hidden = true;
   }
+  on('#finder-open', 'click', () => {
+    finderApplied = false;
+    renderFinder(false);
+    $('#finder-dialog').showModal();
+    (finderStep === 3 ? $('#finder-results-title') : $('#finder-question-title')).focus();
+  });
+  on('#finder-close', 'click', () => $('#finder-dialog').close());
+  on('#finder-dialog', 'close', () => { if (!finderApplied) $('#finder-open').focus({ preventScroll: true }); });
+  on('#finder-form', 'submit', event => {
+    event.preventDefault();
+    const question = FINDER_QUESTIONS[finderStep];
+    if (!question || !Object.prototype.hasOwnProperty.call(question.options, finderAnswers[question.key])) return;
+    finderStep += 1;
+    renderFinder();
+  });
+  on('#finder-back', 'click', () => { finderStep = Math.max(0, finderStep - 1); renderFinder(); });
+  on('#finder-restart', 'click', () => { finderStep = 0; renderFinder(); });
+  on('#score-undo', 'click', () => {
+    if (!scoreUndo) return;
+    const previous = scoreUndo;
+    setConfig(previous);
+    setText('#score-feedback', 'Đã hoàn tác điều chỉnh. Điểm hiện tại: ' + Core.getScore(state) + '/100.');
+    $('#score-details summary').focus({ preventScroll: true });
+  });
   on('#outfit-form', 'submit', (event) => event.preventDefault());
   $$('input[name="garment"]').forEach((input) => input.addEventListener('change', () => setConfig({ ...state, garment: input.value })));
   [['#occasion-options', 'occasion', 'value'], ['#color-options', 'color', 'color'], ['#style-options', 'style', 'value']].forEach(([selector, key, attribute]) => {
@@ -748,7 +900,7 @@
   document.addEventListener('click', (event) => { if (!event.target.closest('.site-header')) closeMenu(); });
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
-    if ($('#story-dialog')?.open) return;
+    if ($('#story-dialog')?.open || $('#finder-dialog')?.open) return;
     if ($('#compare-tray') && !$('#compare-tray').hidden) { closeCompare(); event.preventDefault(); }
     else closeMenu(true);
   });

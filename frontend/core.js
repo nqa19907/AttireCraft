@@ -55,19 +55,57 @@
     return config ? [config.garment, config.occasion, config.weather, config.color, config.style, config.accessories.join(',')].join('|') : null;
   }
 
+  // These editorial rules describe styling choices, never cultural authenticity.
+  function scoreBreakdown(value) {
+    const config = validateConfig(value);
+    if (!config) throw new TypeError('Bản phối không hợp lệ.');
+    const festiveColor = config.occasion === 'cuoi' && ['red', 'pink'].includes(config.color);
+    const extraAccents = config.accessories.length === 2;
+    const colorPenalty = extraAccents ? (config.style === 'minimal' ? 4 : 2) : 0;
+    const fits = DATA.occasions[config.occasion].fit.includes(config.garment);
+    const darkInSun = config.weather === 'warm' && config.color === 'black';
+    const longInRain = config.weather === 'rain' && ['ao-dai', 'tu-than'].includes(config.garment);
+    const criteria = [
+      { id: 'color', label: 'Màu sắc', score: 28 + (festiveColor ? 2 : 0) - colorPenalty, max: 30,
+        reason: (festiveColor ? 'Đỏ son và hồng sen được ưu tiên làm điểm nhấn cho lễ cưới trong bảng gợi ý của studio (+2 điểm).' : 'Một màu áo chủ đạo tạo nền dễ phối trong bảng gợi ý của studio (28 điểm).') +
+          (extraAccents ? (config.style === 'minimal' ? ' Hai phụ kiện làm tăng điểm nhấn so với lựa chọn tối giản (−4 điểm).' : ' Hai phụ kiện chia sẻ sự chú ý với màu áo (−2 điểm).') : '') },
+      { id: 'context', label: 'Bối cảnh', score: fits ? 40 : 24, max: 40,
+        reason: DATA.garments[config.garment].label + (fits ? ' nằm trong nhóm gợi ý cho ' : ' nằm ngoài nhóm gợi ý ưu tiên cho ') + DATA.occasions[config.occasion].label.toLowerCase() + (fits ? ' (40 điểm).' : ' (24 điểm). Bạn vẫn có thể chọn theo nhu cầu thực tế.') },
+      { id: 'comfort', label: 'Thoải mái', score: 30 - (darkInSun ? 8 : 0) - (longInRain ? 5 : 0), max: 30,
+        reason: darkInSun ? 'Màu đen dưới nắng cần cân nhắc độ thoáng và thời gian ở ngoài trời (−8 điểm).' : longInRain ? 'Tà áo dài cần giữ gọn khi di chuyển dưới mưa (−5 điểm).' : 'Chưa có điều chỉnh điểm theo thời tiết đã chọn (30 điểm). Độ thoải mái còn tùy chất liệu và độ vừa vặn.' }
+    ];
+    return { total: criteria.reduce((sum, item) => sum + item.score, 0), criteria };
+  }
+
   function getScore(config) {
-    if (!validateConfig(config)) throw new TypeError('Bản phối không hợp lệ.');
-    let score = 90;
-    score += DATA.occasions[config.occasion].fit.includes(config.garment) ? 5 : -12;
-    if (config.weather === 'warm' && config.color === 'black') score -= 8;
-    if (config.weather === 'rain' && ['ao-dai', 'tu-than'].includes(config.garment)) score -= 5;
-    if (config.style === 'minimal') score += 3;
-    if (config.accessories.length === 2) score -= 2;
-    if (config.garment === 'ba-ba' && config.accessories.includes('khan')) score -= 7;
-    if (config.garment === 'tu-than' && config.accessories.includes('non')) score -= 5;
-    if (config.occasion === 'cuoi' && ['red', 'pink'].includes(config.color)) score += 3;
-    if (config.occasion === 'hang-ngay' && config.garment === 'ngu-than') score -= 6;
-    return Math.max(62, Math.min(98, score));
+    return scoreBreakdown(config).total;
+  }
+
+  function scoreImprovements(value) {
+    const config = validateConfig(value);
+    if (!config) throw new TypeError('Bản phối không hợp lệ.');
+    const before = getScore(config);
+    const candidates = [];
+    const add = (id, label, reason, changes) => {
+      const next = validateConfig({ ...config, ...changes });
+      const after = getScore(next);
+      if (after > before) candidates.push({ id, label, reason, config: next, before, after, delta: after - before });
+    };
+    if (config.weather === 'warm' && config.color === 'black') {
+      add('lighter-color', 'Thử màu ngà', 'Đổi màu áo để giảm lưu ý về màu sẫm dưới nắng.', { color: 'ivory' });
+    }
+    const garment = DATA.occasions[config.occasion].fit
+      .filter(key => key !== config.garment)
+      .sort((a, b) => getScore({ ...config, garment: b }) - getScore({ ...config, garment: a }))[0];
+    if (garment) add('context-garment', 'Thử ' + DATA.garments[garment].label.toLowerCase(), 'Đổi phom áo theo dịp và thời tiết đang chọn; giữ màu và phụ kiện.', { garment });
+    if (config.accessories.length === 2) {
+      const keep = config.accessories[0];
+      add('fewer-accessories', 'Giữ lại ' + DATA.accessories[keep].toLowerCase(), 'Bỏ ' + DATA.accessories[config.accessories[1]].toLowerCase() + ' để tập trung vào một điểm nhấn.', { accessories: [keep] });
+    }
+    if (config.occasion === 'cuoi' && !['red', 'pink'].includes(config.color)) {
+      add('festive-color', 'Thử hồng sen', 'Đổi sang gam màu được studio ưu tiên cho lễ cưới.', { color: 'pink' });
+    }
+    return candidates.sort((a, b) => b.delta - a.delta).slice(0, 3);
   }
 
   function lookName(config) {
@@ -132,12 +170,37 @@
   }
 
   function scoreReasons(config) {
-    const reasons = [];
-    if (!DATA.occasions[config.occasion].fit.includes(config.garment)) reasons.push('Có thể cân nhắc dòng trang phục khác phù hợp hơn với dịp đã chọn.');
-    if (config.weather === 'warm' && config.color === 'black') reasons.push('Màu sẫm cần được cân nhắc khi ở ngoài trời nắng.');
-    if (config.weather === 'rain' && ['ao-dai', 'tu-than'].includes(config.garment)) reasons.push('Tà áo dài cần được giữ gọn khi di chuyển dưới mưa.');
-    if (cultureStatus(config).warning) reasons.push('Xem thêm gợi ý về phụ kiện và bối cảnh văn hóa bên dưới.');
-    return reasons.length ? reasons.join(' ') : 'Phom áo, màu sắc và bối cảnh phù hợp với các quy tắc gợi ý của studio.';
+    return scoreBreakdown(config).criteria.map(item => item.label + ': ' + item.score + '/' + item.max).join(' · ') + '. Tổng điểm là cộng ba tiêu chí.';
+  }
+
+  function guidedSuggestions(answers) {
+    if (!record(answers) || !has(DATA.occasions, answers.occasion) || !has(DATA.weather, answers.weather) || !has(DATA.styles, answers.style)) {
+      throw new TypeError('Hãy chọn đủ dịp, thời tiết và phong cách.');
+    }
+    const { occasion, weather, style } = answers;
+    const colors = occasion === 'cuoi' ? ['pink', 'red', 'ivory', 'teal'] : weather === 'warm' ? ['ivory', 'teal', 'pink', 'red'] : ['teal', 'ivory', 'red', 'pink', 'black'];
+    const pool = DATA.occasions[occasion].fit.flatMap(garment => colors.map(color => validateConfig({
+      garment, occasion, weather, color, style,
+      accessories: style === 'minimal' ? [] : garment === 'tu-than' ? ['khan'] : garment === 'ba-ba' ? ['tui'] : ['ngoc']
+    }))).sort((a, b) => getScore(b) - getScore(a));
+    // Prefer different silhouettes, then a different color for the third option.
+    const selected = [];
+    for (const config of pool) {
+      if (!selected.some(look => look.garment === config.garment)) selected.push(config);
+      if (selected.length === 3) break;
+    }
+    while (selected.length < 3) {
+      const remaining = pool.filter(config => !selected.some(look => configKey(look) === configKey(config)));
+      selected.push(remaining.find(config => !selected.some(look => look.color === config.color)) || remaining[0]);
+    }
+    return selected.map(config => ({
+      config, score: getScore(config),
+      reasons: [
+        DATA.garments[config.garment].label + ' thuộc nhóm gợi ý cho ' + DATA.occasions[occasion].label.toLowerCase() + '.',
+        'Phong cách ' + DATA.styles[style].toLowerCase() + (accessoryLabels(config).length ? ', với ' + accessoryLabels(config).join(' và ').toLowerCase() + '.' : ', tập trung vào phom áo và màu chủ đạo.'),
+        weatherTip(config)
+      ]
+    }));
   }
 
   function addLook(looks, config, id, createdAt) {
@@ -263,5 +326,5 @@
     return result;
   }
 
-  return Object.freeze({ VERSION, MAX_LOOKS, MAX_FILE_BYTES, DATA, DEFAULT, validateConfig, configKey, getScore, lookName, makeLook, imagePath, accessoryLabels, imageDescription, cultureStatus, stylingTip, weatherTip, scoreReasons, addLook, parseLookbook, serializeLookbook, mergeLooks, encodeShare, decodeShare, suggest, differences });
+  return Object.freeze({ VERSION, MAX_LOOKS, MAX_FILE_BYTES, DATA, DEFAULT, validateConfig, configKey, getScore, scoreBreakdown, scoreImprovements, guidedSuggestions, lookName, makeLook, imagePath, accessoryLabels, imageDescription, cultureStatus, stylingTip, weatherTip, scoreReasons, addLook, parseLookbook, serializeLookbook, mergeLooks, encodeShare, decodeShare, suggest, differences });
 });

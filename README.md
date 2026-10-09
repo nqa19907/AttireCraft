@@ -54,12 +54,19 @@ Tham khảo [cấu hình build của Vercel](https://vercel.com/docs/builds/conf
 - Bản phối minh họa cập nhật tức thì theo lựa chọn.
 - Có 200 biến thể phụ kiện dựng sẵn từ 20 ảnh trang phục gốc: 4 kiểu áo × 5 màu × 10 cách chọn một hoặc hai phụ kiện.
 - “Thêm chút cá tính” chọn ảnh theo phong cách: Gen Z thêm kính râm, Cổ điển thêm một vòng cổ ngọc trai, Tối giản giữ bộ ảnh cũ. Danh mục cần 200 tổ hợp phụ kiện và 20 ảnh chưa chọn phụ kiện cho mỗi phong cách mới; phụ kiện theo phong cách không chiếm hai ô phụ kiện tự chọn.
-- Chấm điểm hài hòa và đưa ra lưu ý theo bối cảnh vùng miền, văn hóa.
+- Tìm bản phối qua 3 câu hỏi về dịp, thời tiết và phong cách; nhận 3 phương án có lý do, mở vào phòng phối để chỉnh và lưu.
+- Điểm hài hòa là tổng Màu sắc /30, Bối cảnh /40 và Thoải mái /30; xem lý do từng tiêu chí, áp dụng gợi ý tăng điểm và hoàn tác. Lưu ý văn hóa được trình bày riêng.
 - Lưu tối đa 12 bản phối vào lookbook bằng `localStorage`.
 - So sánh hai phương án, chia sẻ liên kết và tải ảnh PNG của bản phối hoặc lookbook.
 - Xuất và nhập lookbook bằng JSON.
 - Câu chuyện chi tiết cho bốn trang phục, kèm liên kết nguồn bảo tàng và du lịch.
 - Giao diện responsive cho desktop, tablet và điện thoại.
+
+## Cách tính điểm và tìm bản phối
+
+Các quy tắc mang tính gợi ý của studio, không đánh giá tính xác thực văn hóa hay đo độ thoải mái thực tế. Màu sắc bắt đầu ở 28/30, thêm 2 điểm cho đỏ/hồng ở lễ cưới, giảm 4 điểm khi chọn hai phụ kiện ở phong cách tối giản (2 điểm với phong cách khác). Bối cảnh được 40/40 nếu trang phục thuộc nhóm ưu tiên cho dịp đã chọn, ngoài nhóm là 24/40. Thoải mái bắt đầu ở 30/30, giảm 8 điểm cho màu đen khi nắng ấm, giảm 5 điểm cho áo dài/tứ thân khi có mưa. Tổng điểm được tính lại từ cấu hình khi mở dữ liệu đã lưu, nhập JSON hoặc mở liên kết chia sẻ.
+
+Luồng tìm bản phối giữ nguyên ba câu trả lời, chọn trong nhóm trang phục gợi ý của dịp đó và ưu tiên đa dạng phom áo rồi màu sắc. Các nút điều chỉnh giữ dịp, thời tiết và phong cách; hiển thị mức tăng điểm thật trước khi áp dụng. Có thể hoàn tác lần áp dụng gần nhất, cho đến khi bạn đổi lựa chọn khác. Chọn một kết quả tìm bản phối sẽ mở bản nháp mới, không cập nhật bản đã lưu trước đó.
 
 ## Cấu trúc
 

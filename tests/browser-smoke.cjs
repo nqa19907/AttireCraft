@@ -125,13 +125,147 @@ async function main() {
         process.stdout.write(`PASS ${name}\n`);
       } catch (error) {
         results.push({ name, status: 'FAIL', error: error.message, browserErrors: errors, assetErrors: failures });
-        process.stderr.write(`FAIL ${name}: ${error.message}\n`);
+        process.stderr.write(`FAIL ${name}: ${error.stack || error.message}\n`);
         if (screenshotDir) {
           fs.mkdirSync(screenshotDir, { recursive: true });
           await page.screenshot({ path: path.join(screenshotDir, `failed-${name.replace(/[^a-z0-9]+/gi, '-')}.png`), fullPage: true }).catch(() => {});
         }
       } finally { await context.close(); }
     }
+
+    await scenario('guided finder supports back cancel selection and saved drafts', async page => {
+      const original = await page.locator('#model-image').getAttribute('src');
+      await page.locator('#finder-open').click();
+      assert.equal(await page.locator('#finder-next').isDisabled(), true);
+      await page.locator('input[name="finder-occasion"][value="cuoi"]').check();
+      await page.locator('#finder-next').click();
+      assert.equal(await page.locator('#finder-next').isDisabled(), true);
+      await page.locator('input[name="finder-weather"][value="rain"]').check();
+      await page.locator('#finder-back').click();
+      assert.equal(await page.locator('input[name="finder-occasion"][value="cuoi"]').isChecked(), true);
+      await page.locator('#finder-next').click();
+      assert.equal(await page.locator('input[name="finder-weather"][value="rain"]').isChecked(), true);
+      await page.keyboard.press('Escape');
+      assert.equal(await page.locator('#finder-dialog').evaluate(dialog => dialog.open), false);
+      assert.equal(await page.locator('#finder-open').evaluate(button => button === document.activeElement), true);
+      assert.equal(await page.locator('#model-image').getAttribute('src'), original);
+      await page.locator('#finder-open').click();
+      await page.locator('#finder-next').click();
+      await page.locator('input[name="finder-style"][value="genz"]').check();
+      await page.locator('#finder-next').click();
+      assert.equal(await page.locator('.finder-card').count(), 3);
+      assert.equal(await page.locator('.finder-card li').count(), 9);
+      assert.ok((await page.locator('#finder-summary').innerText()).includes('Lễ cưới · Có mưa · Gen Z'));
+      assert.equal(await page.locator('#model-image').getAttribute('src'), original, 'Results do not change the draft');
+      await page.locator('#finder-restart').click();
+      await page.locator('input[name="finder-occasion"][value="hang-ngay"]').check();
+      await page.locator('#finder-next').click();
+      await page.locator('input[name="finder-weather"][value="warm"]').check();
+      await page.locator('#finder-next').click();
+      await page.locator('input[name="finder-style"][value="classic"]').check();
+      await page.locator('#finder-next').click();
+      const thumbnail = await page.locator('.finder-card img').first().getAttribute('src');
+      await page.locator('[data-finder-choice="0"]').click();
+      await imageReady(page);
+      assert.equal(await page.locator('#finder-dialog').evaluate(dialog => dialog.open), false);
+      assert.equal(await page.locator('#studio-title').evaluate(title => title === document.activeElement), true);
+      assert.equal(await page.locator('#occasion-options [aria-pressed="true"]').getAttribute('data-value'), 'hang-ngay');
+      assert.equal(await page.locator('#weather-select').inputValue(), 'warm');
+      assert.equal(await page.locator('#style-options [aria-pressed="true"]').getAttribute('data-value'), 'classic');
+      const score = await page.locator('#score-value').innerText();
+      await page.locator('#save-button').click();
+      assert.equal(await saveCount(page), 1);
+      assert.equal(await page.locator('.saved-card img').getAttribute('src'), thumbnail);
+      const chosen = await page.locator('#model-image').getAttribute('src');
+      await page.reload();
+      await imageReady(page);
+      assert.equal(await page.locator('#model-image').getAttribute('src'), chosen);
+      assert.equal(await page.locator('#score-value').innerText(), score);
+      await page.locator('.saved-compare').click();
+      assert.ok((await page.locator('.compare-item.current').innerText()).includes(score + '/100'));
+      await page.locator('#tray-close').click();
+      await page.locator('.saved-edit').click();
+      await page.locator('#finder-open').click();
+      for (const [name, value] of [['occasion', 'le-hoi'], ['weather', 'cool'], ['style', 'minimal']]) {
+        await page.locator('input[name="finder-' + name + '"][value="' + value + '"]').check();
+        await page.locator('#finder-next').click();
+      }
+      await page.locator('[data-finder-choice="0"]').click();
+      assert.ok((await page.locator('#save-button').innerText()).includes('Lưu vào lookbook'));
+      await page.locator('#save-button').click();
+      assert.equal(await saveCount(page), 2, 'Choosing a new recommendation never overwrites the saved look being edited');
+    });
+
+    await scenario('score explanation applies and undoes exact changes without losing context', async page => {
+      await selectGarment(page, 'ba-ba');
+      await page.locator('#occasion-options [data-value="cuoi"]').click();
+      await selectColor(page, 'black');
+      await page.locator('#accessory-options [data-value="ngoc"]').click();
+      await page.locator('#accessory-options [data-value="tui"]').click();
+      await page.locator('#score-details summary').click();
+      const total = Number(await page.locator('#score-value').innerText());
+      const parts = await page.locator('.criterion-value').allTextContents();
+      assert.equal(parts.reduce((sum, text) => sum + Number(text.split('/')[0]), 0), total);
+      assert.equal(await page.locator('#score-breakdown meter').count(), 3);
+      assert.ok((await page.locator('.score-method').innerText()).includes('không xác nhận'));
+      await page.locator('[data-improvement="lighter-color"]').click();
+      await imageReady(page, 'ba-ba-ivory');
+      assert.equal(Number(await page.locator('#score-value').innerText()), total + 8);
+      assert.equal(await page.locator('#occasion-options [aria-pressed="true"]').getAttribute('data-value'), 'cuoi');
+      assert.equal(await page.locator('#weather-select').inputValue(), 'warm');
+      assert.equal(await page.locator('#style-options [aria-pressed="true"]').getAttribute('data-value'), 'minimal');
+      assert.equal(await page.locator('#accessory-options [aria-pressed="true"]').count(), 2);
+      assert.equal(await page.locator('#score-undo').evaluate(button => button === document.activeElement), true);
+      await page.locator('#score-undo').click();
+      await imageReady(page, 'ba-ba-black');
+      assert.equal(Number(await page.locator('#score-value').innerText()), total);
+      assert.equal(await page.locator('#score-undo').isVisible(), false);
+      await page.locator('[data-improvement="context-garment"]').click();
+      assert.equal(await page.locator('input[name="garment"][value="ao-dai"]').isChecked(), true);
+      await selectColor(page, 'red');
+      assert.equal(await page.locator('#score-undo').isVisible(), false, 'An old undo cannot overwrite a subsequent manual edit');
+      await page.locator('[data-improvement="fewer-accessories"]').click();
+      assert.equal(await page.locator('#accessory-options [aria-pressed="true"]').count(), 1);
+      assert.equal(Number(await page.locator('#score-value').innerText()), 100);
+      assert.equal(await page.locator('[data-improvement]').count(), 0);
+      await page.locator('#save-button').click();
+      assert.ok((await page.locator('.saved-card').innerText()).includes('100/100'));
+      await page.reload();
+      await imageReady(page);
+      assert.equal(Number(await page.locator('#score-value').innerText()), 100);
+    });
+
+    await scenario('guided finder and score detail fit mobile tablet desktop and keyboard', async page => {
+      for (const width of [320, 390, 768, 1440]) {
+        await page.setViewportSize({ width, height: 900 });
+        await page.locator('#finder-open').click();
+        if (await page.locator('#finder-results').isVisible()) await page.locator('#finder-restart').click();
+        await page.locator('input[name="finder-occasion"]').first().focus();
+        await page.keyboard.press('ArrowRight');
+        await page.locator('#finder-next').click();
+        await page.locator('input[name="finder-weather"][value="cool"]').check();
+        await page.locator('#finder-next').click();
+        await page.locator('input[name="finder-style"][value="classic"]').check();
+        if (screenshotDir && [390, 1440].includes(width)) {
+          fs.mkdirSync(screenshotDir, { recursive: true });
+          await page.screenshot({ path: path.join(screenshotDir, 'finder-question-' + width + '.png') });
+        }
+        await page.locator('#finder-next').click();
+        await page.locator('.finder-card img').first().scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => [...document.querySelectorAll('.finder-card img')].every(image => image.complete && image.naturalWidth > 0));
+        assert.equal(await page.locator('#finder-dialog').evaluate(dialog => dialog.scrollWidth <= dialog.clientWidth + 1), true, 'Dialog fits at ' + width);
+        await assertNoOverflow(page, 'Finder at ' + width);
+        if (screenshotDir && [390, 1440].includes(width)) {
+          await page.locator('#finder-results-title').scrollIntoViewIfNeeded();
+          await page.screenshot({ path: path.join(screenshotDir, 'finder-results-' + width + '.png') });
+        }
+        await page.keyboard.press('Escape');
+        await selectColor(page, 'black');
+        if (!(await page.locator('#score-details').getAttribute('open') !== null)) await page.locator('#score-details summary').click();
+        await assertNoOverflow(page, 'Score detail at ' + width);
+        if (screenshotDir && [390, 1440].includes(width)) await page.locator('#score-details').screenshot({ path: path.join(screenshotDir, 'score-details-' + width + '.png') });
+      }
+    });
 
     await scenario('responsive layouts and native keyboard selection', async page => {
       for (const width of [320, 390, 768, 1440]) {

@@ -11,13 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
     <link rel="preload" href="assets/optimized/ao-dai-ivory.webp" as="image" fetchpriority="high" />
-    <link rel="stylesheet" href="styles.css?v=20261006-1" />
+    <link rel="stylesheet" href="styles.css?v=20261009-1" />
     <script src="image-variants.js?v=20261002-6" defer></script>
     <script src="style-image-variants.js?v=20261006-1" defer></script>
-    <script src="core.js?v=20261006-1" defer></script>
+    <script src="core.js?v=20261009-1" defer></script>
     <script src="stories.js?v=20261002-6" defer></script>
     <script src="download.js?v=20261006-1" defer></script>
-    <script src="app.js?v=20261006-1" defer></script>
+    <script src="app.js?v=20261009-1" defer></script>
   </head>
   <body id="top">
     <a class="skip-link" href="#studio">Bỏ qua đến phòng phối</a>
@@ -59,6 +59,7 @@
       </section>
       <section class="studio-section section-shell" id="studio" aria-labelledby="studio-title">
         <div class="section-intro"><div><p class="section-number">02 / PHÒNG PHỐI CỦA BẠN</p><h2 id="studio-title">Chọn một chút.<br /><em>Ra chất rất Việt.</em></h2></div><div class="intro-aside"><p>Chọn phom, thử màu, thêm một điểm nhấn.<br />Bản phối của bạn thành hình từ những điều nhỏ.</p><span class="quiet-badge"><span aria-hidden="true">●</span> Tự do thử, thoải mái đổi</span></div></div>
+        <div class="finder-invite"><div><span class="section-number">CHƯA BIẾT BẮT ĐẦU TỪ ĐÂU?</span><h3>Tìm bản phối hợp với bạn</h3><p>3 câu hỏi về dịp, thời tiết và sở thích. 3 gợi ý để bạn chọn và biến tấu.</p></div><button class="primary-button" id="finder-open" type="button" aria-haspopup="dialog" aria-controls="finder-dialog">Tìm bản phối của tôi <span aria-hidden="true">↗</span></button></div>
         <div class="studio-toolbar"><p><span class="status-dot" aria-hidden="true"></span><span id="draft-status">Không gian sáng tạo của bạn</span></p><div><button id="suggest-button" type="button"><span aria-hidden="true">✧</span> Gợi ý cho tôi</button><button id="reset-button" type="button"><span aria-hidden="true">↺</span> Bắt đầu lại</button></div></div>
         <div class="studio-grid">
           <form class="config-panel" id="outfit-form" aria-label="Các lựa chọn phối Việt phục">
@@ -88,6 +89,7 @@
           </form>
           <div class="preview-column">
             <div class="preview-card" id="preview-card" tabindex="-1"><div class="preview-topbar"><span>BẢN PHỐI / <b id="preview-index">01</b></span><span class="live-dot">ĐANG SÁNG TẠO</span></div><div class="model-stage" id="model-stage"><img id="model-image" src="assets/optimized/ao-dai-ivory.webp" width="1122" height="1402" decoding="async" loading="lazy" alt="Bản phối áo dài màu ngà" /><div class="accessory-badge" id="accessory-badge" hidden></div><div class="look-label"><span id="look-context">LỄ HỘI · NẮNG ẤM</span><strong id="look-name">Nét Ngà Đương Đại</strong></div><span class="image-caption">ẢNH MINH HỌA</span></div><div class="score-panel"><div class="score-ring" id="score-ring"><strong id="score-value">98</strong><span>/100</span></div><div><span class="score-label">GỢI Ý HÀI HÒA</span><strong id="score-title">Rất hợp!</strong><p id="score-copy">Một khởi đầu nhẹ nhàng cho bản phối của bạn.</p></div></div></div>
+            <details class="score-details" id="score-details"><summary>Hiểu điểm &amp; thử điều chỉnh</summary><div class="score-details-content"><p class="score-method">Màu sắc /30 + Bối cảnh /40 + Thoải mái /30. Đây là quy tắc gợi ý của studio; điểm số không xác nhận tính đúng đắn về văn hóa.</p><div id="score-breakdown"></div><h3 id="score-actions-title">Một thay đổi nhỏ</h3><div id="score-improvements"></div><p class="score-feedback" id="score-feedback" role="status" aria-live="polite" aria-atomic="true"></p><button class="secondary-button" id="score-undo" type="button" hidden>Hoàn tác điều chỉnh</button></div></details>
             <p class="sr-only" id="preview-status" role="status" aria-live="polite" aria-atomic="true"></p>
             <div class="styling-notes"><p><span aria-hidden="true">✧</span><span id="styling-tip">Giữ phụ kiện tinh gọn để tôn nét đẹp của tà áo.</span></p><p><span aria-hidden="true">☀</span><span id="weather-tip">Ưu tiên chất liệu nhẹ, thoáng cho ngày nắng ấm.</span></p></div>
             <div class="culture-note" id="culture-note"><span class="note-icon" aria-hidden="true">✓</span><div><strong>Gợi ý giữ nét đặc trưng</strong><p id="culture-copy">Mỗi tà áo đều có câu chuyện riêng. Khám phá để phối tự tin hơn.</p></div><button type="button" id="note-more" aria-label="Đọc câu chuyện của trang phục đang chọn">↗</button></div>
@@ -109,6 +111,12 @@
       <section class="closing-note" aria-label="Thông điệp AttireCraft"><span aria-hidden="true">✳</span><p>Di sản vẫn ở đây.<br /><em>Chờ bạn kể tiếp.</em></p><a href="#studio">Bắt đầu câu chuyện của bạn <span aria-hidden="true">↗</span></a></section>
     </main>
     <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#top"><span class="brand-flower" aria-hidden="true">✳</span><span>Attire<span>Craft</span></span></a><p>Việt phục, theo cách bạn.</p><div><a href="#studio">Phòng phối</a><a href="#heritage">Chuyện Việt phục</a><a href="#top">Lên đầu trang ↑</a></div></div><div class="footer-bottom"><span>Được tạo nên từ tình yêu với nét Việt.</span><span>Khám phá · Thử nghiệm · Trân trọng</span></div></footer>
+    <dialog class="finder-dialog" id="finder-dialog" aria-labelledby="finder-title" aria-describedby="finder-description">
+      <button class="dialog-close" id="finder-close" type="button" aria-label="Đóng tìm bản phối">×</button>
+      <p class="section-number" id="finder-progress">CÂU HỎI 1 / 3</p><h2 id="finder-title">Tìm bản phối hợp với bạn</h2><p id="finder-description">Bắt đầu từ những điều bạn thích. Mỗi gợi ý đều có lý do để bạn dễ lựa chọn.</p>
+      <form id="finder-form"><div id="finder-question"></div><div class="finder-navigation"><button class="secondary-button" id="finder-back" type="button" hidden>Quay lại</button><button class="primary-button" id="finder-next" type="submit" disabled>Tiếp tục →</button></div></form>
+      <div id="finder-results" hidden><h3 id="finder-results-title" tabindex="-1">3 cách phối dành cho bạn</h3><p id="finder-summary"></p><div class="finder-results-grid" id="finder-results-grid"></div><button class="secondary-button" id="finder-restart" type="button">Đổi câu trả lời</button></div>
+    </dialog>
     <dialog class="story-dialog" id="story-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" type="button" aria-label="Đóng câu chuyện">×</button><p class="section-number" id="dialog-label">CHUYỆN VIỆT PHỤC</p><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
     <aside class="compare-tray" id="compare-tray" aria-hidden="true" hidden aria-labelledby="compare-heading"><button class="tray-close" id="tray-close" type="button" aria-label="Đóng so sánh">×</button><p class="section-number" id="compare-heading">HAI CÁCH KỂ, MỘT CHẤT RIÊNG</p><p class="compare-status" id="compare-status">Giữ một bản làm mốc rồi thử thay đổi lựa chọn.</p><div class="compare-content" id="compare-content"></div></aside>
     <div class="toast" id="toast"><span id="toast-message" role="status" aria-live="polite" aria-atomic="true"></span><button id="undo-button" type="button" hidden>Hoàn tác</button></div>

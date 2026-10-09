@@ -39,7 +39,7 @@ test('scoring responds to context and material comfort constraints', () => {
   assert.ok(Core.getScore(base({ weather: 'rain' })) < Core.getScore(base()));
   assert.ok(Core.getScore(base({ color: 'black' })) < Core.getScore(base({ color: 'ivory' })));
   assert.ok(Core.getScore(base({ garment: 'ba-ba', occasion: 'hang-ngay' })) > Core.getScore(base({ garment: 'ba-ba', occasion: 'cuoi' })));
-  assert.ok(Core.getScore(base({ garment: 'ba-ba', accessories: ['khan'] })) < Core.getScore(base({ garment: 'ba-ba' })));
+  assert.equal(Core.getScore(base({ garment: 'ba-ba', accessories: ['khan'] })), Core.getScore(base({ garment: 'ba-ba' })), 'Cultural notes do not penalize the styling score');
   assert.throws(() => Core.getScore({}), TypeError);
 });
 
@@ -54,7 +54,7 @@ test('all supported choices produce bounded scores, descriptions and safe local 
             for (const items of accessories) {
               const config = { garment, occasion, weather, color, style, accessories: items };
               const score = Core.getScore(config);
-              assert.ok(score >= 62 && score <= 98);
+              assert.ok(score >= 0 && score <= 100);
               assert.ok(Core.lookName(config).length > 5);
               assert.equal(typeof Core.cultureStatus(config).warning, 'boolean');
               assert.ok(Core.scoreReasons(config).length > 10);
@@ -309,4 +309,80 @@ test('comparison differences cover every selected dimension and ignore accessory
   assert.equal(changes.length, 6);
   assert.ok(changes.some((message) => message.includes('Thời tiết')));
   assert.ok(changes.some((message) => message.includes('Phụ kiện')));
+});
+
+
+test('score criteria add up and culturally flagged combinations are scored independently', () => {
+  const configs = [base(), base({ occasion: 'cuoi', color: 'red' }), base({ garment: 'ba-ba', occasion: 'cuoi', color: 'black', accessories: ['ngoc', 'tui'] }), base({ weather: 'rain', style: 'genz' })];
+  for (const config of configs) {
+    const breakdown = Core.scoreBreakdown(config);
+    assert.equal(breakdown.criteria.length, 3);
+    assert.equal(breakdown.criteria.reduce((sum, item) => sum + item.max, 0), 100);
+    assert.equal(breakdown.total, breakdown.criteria.reduce((sum, item) => sum + item.score, 0));
+    assert.equal(breakdown.total, Core.makeLook(config, 'score-test', 1).score);
+    for (const item of breakdown.criteria) {
+      assert.ok(item.score >= 0 && item.score <= item.max);
+      assert.ok(item.reason.length > 20);
+    }
+  }
+  assert.equal(Core.getScore(base({ occasion: 'cuoi', color: 'red' })), 100);
+  const flagged = base({ garment: 'ngu-than', style: 'genz' });
+  assert.equal(Core.cultureStatus(flagged).warning, true);
+  assert.equal(Core.getScore(flagged), Core.getScore({ ...flagged, style: 'classic' }));
+  assert.throws(() => Core.scoreBreakdown({}), TypeError);
+  assert.throws(() => Core.scoreImprovements({}), TypeError);
+});
+
+test('score improvements preserve user context and report the actual gain without mutation', () => {
+  const keys = Object.keys(Core.DATA.accessories);
+  const combinations = [[], ...keys.map(key => [key])];
+  for (let i = 0; i < keys.length; i++) for (let j = i + 1; j < keys.length; j++) combinations.push([keys[i], keys[j]]);
+  for (const garment of Object.keys(Core.DATA.garments)) for (const occasion of Object.keys(Core.DATA.occasions)) for (const weather of Object.keys(Core.DATA.weather)) for (const color of Object.keys(Core.DATA.colors)) for (const style of Object.keys(Core.DATA.styles)) for (const accessories of combinations) {
+    const config = { garment, occasion, weather, color, style, accessories };
+    const snapshot = JSON.stringify(config);
+    const changes = Core.scoreImprovements(config);
+    assert.ok(changes.length <= 3);
+    assert.equal(new Set(changes.map(change => change.id)).size, changes.length);
+    for (const change of changes) {
+      assert.ok(Core.validateConfig(change.config));
+      assert.equal(change.config.occasion, occasion);
+      assert.equal(change.config.weather, weather);
+      assert.equal(change.config.style, style);
+      assert.notEqual(Core.configKey(change.config), Core.configKey(config));
+      assert.equal(change.before, Core.getScore(config));
+      assert.equal(change.after, Core.getScore(change.config));
+      assert.equal(change.delta, change.after - change.before);
+      assert.ok(change.delta > 0);
+    }
+    assert.equal(JSON.stringify(config), snapshot);
+  }
+  assert.deepEqual(Core.scoreImprovements(base()), []);
+});
+
+test('guided discovery returns three distinct editable looks for every answer combination', () => {
+  for (const occasion of Object.keys(Core.DATA.occasions)) for (const weather of Object.keys(Core.DATA.weather)) for (const style of Object.keys(Core.DATA.styles)) {
+    const answers = { occasion, weather, style };
+    const snapshot = JSON.stringify(answers);
+    const results = Core.guidedSuggestions(answers);
+    assert.equal(results.length, 3);
+    assert.equal(new Set(results.map(item => Core.configKey(item.config))).size, 3);
+    assert.ok(new Set(results.map(item => item.config.garment)).size >= 2);
+    for (const result of results) {
+      assert.ok(Core.validateConfig(result.config));
+      assert.equal(result.config.occasion, occasion);
+      assert.equal(result.config.weather, weather);
+      assert.equal(result.config.style, style);
+      assert.ok(Core.DATA.occasions[occasion].fit.includes(result.config.garment));
+      assert.equal(result.score, Core.getScore(result.config));
+      assert.equal(result.reasons.length, 3);
+      assert.ok(result.reasons.every(reason => reason.length > 20));
+      if (weather === 'warm') assert.notEqual(result.config.color, 'black');
+      assert.deepEqual(Core.decodeShare(Core.encodeShare([result.config])), [result.config]);
+    }
+    assert.deepEqual(results, Core.guidedSuggestions(answers));
+    assert.equal(JSON.stringify(answers), snapshot);
+  }
+  for (const answers of [null, {}, [], { occasion: 'le-hoi', weather: 'snow', style: 'minimal' }, { occasion: '__proto__', weather: 'warm', style: 'genz' }, { occasion: 'cuoi', weather: 'warm', style: 'unknown' }]) {
+    assert.throws(() => Core.guidedSuggestions(answers), TypeError);
+  }
 });
